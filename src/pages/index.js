@@ -20,33 +20,19 @@ const IndexPage = ({ data }) => {
       <div className="content-container">
         <h2>Portfolio projects:</h2>
         {projects.map(({ frontmatter, html }, i) => {
-          const { title, githubRepo, siteLink } = frontmatter;
+          const { title, githubRepo, postmanDocs, siteLink } = frontmatter;
           return (
             <ContentCard
               key={i}
               title={title}
               githubRepo={githubRepo}
               siteLink={siteLink}
+              postmanDocs={postmanDocs}
             >
               {html}
             </ContentCard>
           );
         })}
-        <ul>
-          <li>
-            <a href="https://github.com/shanemcfadden/interactive-pathfinder">
-              Interactive Pathfinder
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/shanemcfadden/budget-api">Budget API</a>
-          </li>
-          <li>
-            <a href="https://github.com/shanemcfadden/mcfaddenpiano.com">
-              mcfaddenpiano.com
-            </a>
-          </li>
-        </ul>
       </div>
     </main>
   );
@@ -58,6 +44,7 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           githubRepo
+          postmanDocs
           siteLink
           title
         }
