@@ -66,13 +66,21 @@ h2 {
 }
 
 .button {
-  border: 1px solid black;
+  background-color: rgb(82, 185, 245);
   border-radius: 0.5rem;
-  color: black;
+  color: white;
   cursor: pointer;
   margin: 0 0.5rem;
   padding: 0.5rem;
   text-decoration: none;
+
+  &.button--postman {
+    background-color: #f47022;
+  }
+
+  &.button--github {
+    background-color: black;
+  }
 }
 
 .button-row {
