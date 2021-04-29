@@ -13,22 +13,24 @@ const IndexPage = () => {
           <h2 className="align-right">Full stack developer</h2>
         </div>
       </div>
-      <h2>Portfolio projects:</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/shanemcfadden/interactive-pathfinder">
-            Interactive Pathfinder
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/shanemcfadden/budget-api">Budget API</a>
-        </li>
-        <li>
-          <a href="https://github.com/shanemcfadden/mcfaddenpiano.com">
-            mcfaddenpiano.com
-          </a>
-        </li>
-      </ul>
+      <div className="content-container">
+        <h2>Portfolio projects:</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/shanemcfadden/interactive-pathfinder">
+              Interactive Pathfinder
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/shanemcfadden/budget-api">Budget API</a>
+          </li>
+          <li>
+            <a href="https://github.com/shanemcfadden/mcfaddenpiano.com">
+              mcfaddenpiano.com
+            </a>
+          </li>
+        </ul>
+      </div>
     </main>
   );
 };
