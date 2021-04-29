@@ -7,10 +7,10 @@ const IndexPage = () => {
     <main>
       <div className="banner">
         <div className="content-container">
-          <div>Hello, my name is</div>
-          <h1>Shane McFadden</h1>
-          <div>and I'm a</div>
-          <h2>Full stack developer</h2>
+          <div>Hi, my name is</div>
+          <h1 className="align-left-side">Shane McFadden</h1>
+          <div className="align-center">and I'm a</div>
+          <h2 className="align-right">Full stack developer</h2>
         </div>
       </div>
       <h2>Portfolio projects:</h2>
