@@ -65,21 +65,22 @@ h2 {
   padding: 1rem 2rem;
 }
 
+.button {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  color: black;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
 .button-row {
   display: flex;
   align-items: flex-start;
 
   :first-child {
     margin-left: 0;
-  }
-
-  a {
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    color: black;
-    margin: 0 0.5rem;
-    padding: 0.5rem;
-    text-decoration: none;
   }
 }
 
