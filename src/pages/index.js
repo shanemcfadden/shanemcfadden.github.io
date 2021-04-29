@@ -1,6 +1,7 @@
 import * as React from "react";
 import "normalize.css";
 import "../styles/index.scss";
+import ContentCard from "../components/ContentCard";
 
 const IndexPage = () => {
   return (
@@ -15,24 +16,12 @@ const IndexPage = () => {
       </div>
       <div className="content-container">
         <h2>Portfolio projects:</h2>
-        <div className="content-card">
-          <h3>Interactive Pathfinder</h3>
-          <p>
-            A single page application that allows users to select start and end
-            points from a grid and calculate the easiest path between them. They
-            may also draw textures to make it easier or harder to reach the end.
-            This pathfinder implements Dijkstra's algorithm to find a path with
-            the lowest difficulty.
-          </p>
-          <div className="button-row">
-            <a href="https://shanemcfadden.github.io/interactive-pathfinder/">
-              View project
-            </a>
-            <a href="https://github.com/shanemcfadden/interactive-pathfinder">
-              View code on Github
-            </a>
-          </div>
-        </div>
+        <ContentCard
+          title={"Interactive Pathfinder"}
+          content={
+            "A single page application that allows users to select start and end points from a grid and calculate the easiest path between them. They may also draw textures to make it easier or harder to reach the end.  This pathfinder implements Dijkstra's algorithm to find a path with the lowest difficulty."
+          }
+        />
         <ul>
           <li>
             <a href="https://github.com/shanemcfadden/interactive-pathfinder">
