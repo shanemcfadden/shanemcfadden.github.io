@@ -1,10 +1,10 @@
 import React from "react";
 
-const ContentCard = ({ title, content, links }) => {
+const ContentCard = ({ title, children }) => {
   return (
     <div className="content-card">
       <h3>{title}</h3>
-      <p>{content}</p>
+      <div dangerouslySetInnerHTML={{ __html: children }} />
       <div className="button-row">
         <a href="https://shanemcfadden.github.io/interactive-pathfinder/">
           View project
