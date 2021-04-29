@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContentCard = ({ title, children }) => {
+const ContentCard = ({ title, githubRepo, children }) => {
   return (
     <div className="content-card">
       <h3>{title}</h3>
@@ -9,9 +9,7 @@ const ContentCard = ({ title, children }) => {
         <a href="https://shanemcfadden.github.io/interactive-pathfinder/">
           View project
         </a>
-        <a href="https://github.com/shanemcfadden/interactive-pathfinder">
-          View code on Github
-        </a>
+        {githubRepo && <a href={githubRepo}>View code on Github</a>}
       </div>
     </div>
   );

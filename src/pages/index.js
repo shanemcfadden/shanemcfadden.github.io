@@ -6,6 +6,7 @@ import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
+  console.log(projects);
   return (
     <main>
       <div className="banner">
@@ -19,8 +20,9 @@ const IndexPage = ({ data }) => {
       <div className="content-container">
         <h2>Portfolio projects:</h2>
         {projects.map(({ frontmatter, html }, i) => {
+          const { title, githubRepo } = frontmatter;
           return (
-            <ContentCard key={i} title={frontmatter.title}>
+            <ContentCard key={i} title={title} githubRepo={githubRepo}>
               {html}
             </ContentCard>
           );
@@ -50,6 +52,7 @@ export const pageQuery = graphql`
     allMarkdownRemark {
       nodes {
         frontmatter {
+          githubRepo
           title
         }
         html
