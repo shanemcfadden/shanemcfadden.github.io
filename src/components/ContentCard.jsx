@@ -14,17 +14,17 @@ const ContentCard = ({
       <div className="button-row">
         {siteLink && (
           <a className="button" href={siteLink}>
-            View project
-          </a>
-        )}
-        {githubRepo && (
-          <a className="button button--github" href={githubRepo}>
-            View code on Github
+            Project site
           </a>
         )}
         {postmanDocs && (
           <a className="button button--postman" href={postmanDocs}>
-            View Documentation on Postman
+            Project Documentation
+          </a>
+        )}
+        {githubRepo && (
+          <a className="button button--github" href={githubRepo}>
+            View on GitHub
           </a>
         )}
       </div>
