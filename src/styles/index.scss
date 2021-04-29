@@ -53,9 +53,34 @@ h2 {
 }
 
 .content-container {
+  margin: 0 auto;
   max-width: 900px;
   padding: 1rem;
-  margin: 0 auto;
+}
+
+.content-card {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+}
+
+.button-row {
+  display: flex;
+  align-items: flex-start;
+
+  :first-child {
+    margin-left: 0;
+  }
+
+  a {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    color: black;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+  }
 }
 
 .align-center {
