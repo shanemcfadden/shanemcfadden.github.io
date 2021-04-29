@@ -5,8 +5,14 @@ import "../styles/index.scss";
 const IndexPage = () => {
   return (
     <main>
-      <h1>Shane McFadden</h1>
-      <h2>Full stack developer</h2>
+      <div className="banner">
+        <div className="content-container">
+          <div>Hello, my name is</div>
+          <h1>Shane McFadden</h1>
+          <div>and I'm a</div>
+          <h2>Full stack developer</h2>
+        </div>
+      </div>
       <h2>Portfolio projects:</h2>
       <ul>
         <li>
