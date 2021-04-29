@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="content-container">
-        <h2>Portfolio projects:</h2>
+        <h2>Recent projects</h2>
         {projects.map(({ frontmatter, html }, i) => {
           const { title, githubRepo, postmanDocs, siteLink } = frontmatter;
           return (
