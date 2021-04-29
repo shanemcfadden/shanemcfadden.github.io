@@ -74,12 +74,22 @@ h2 {
   padding: 0.5rem;
   text-decoration: none;
 
+  &:hover {
+    background-color: rgb(73, 98, 243);
+  }
+
   &.button--postman {
-    background-color: #f47022;
+    background-color: #f37e3b;
+    &:hover {
+      background-color: #ff5e01;
+    }
   }
 
   &.button--github {
     background-color: black;
+    &:hover {
+      background-color: #2a2a2a;
+    }
   }
 }
 
