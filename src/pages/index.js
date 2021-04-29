@@ -8,7 +8,7 @@ const IndexPage = () => {
       <div className="banner">
         <div className="content-container">
           <div>Hi, my name is</div>
-          <h1 className="align-left-side">Shane McFadden</h1>
+          <h1 className="align-center">Shane McFadden</h1>
           <div className="align-center">and I'm a</div>
           <h2 className="align-right">Full stack developer</h2>
         </div>
