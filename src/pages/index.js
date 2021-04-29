@@ -20,9 +20,14 @@ const IndexPage = ({ data }) => {
       <div className="content-container">
         <h2>Portfolio projects:</h2>
         {projects.map(({ frontmatter, html }, i) => {
-          const { title, githubRepo } = frontmatter;
+          const { title, githubRepo, siteLink } = frontmatter;
           return (
-            <ContentCard key={i} title={title} githubRepo={githubRepo}>
+            <ContentCard
+              key={i}
+              title={title}
+              githubRepo={githubRepo}
+              siteLink={siteLink}
+            >
               {html}
             </ContentCard>
           );
@@ -53,6 +58,7 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           githubRepo
+          siteLink
           title
         }
         html
