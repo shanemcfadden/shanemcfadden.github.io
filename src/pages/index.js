@@ -1,5 +1,6 @@
 import * as React from "react";
 import "normalize.css";
+import "../styles/index.scss";
 
 const IndexPage = () => {
   return (
