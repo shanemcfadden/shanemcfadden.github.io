@@ -126,6 +126,19 @@ h2 {
   }
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+
+  a,
+  a:visited {
+    color: white;
+    font-size: 3rem;
+    margin: 0 0.5rem;
+  }
+}
+
 .align-center {
   text-align: center;
 }
