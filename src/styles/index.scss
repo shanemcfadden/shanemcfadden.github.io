@@ -1,3 +1,6 @@
+$dark-mc: #004eff;
+$light-mc: #55d0ff;
+
 * {
   box-sizing: border-box;
 }
@@ -29,8 +32,8 @@ h2 {
 }
 
 .banner {
-  background: #004eff;
-  background: radial-gradient(circle, #004eff 6%, #55d0ff 100%);
+  background: $dark-mc;
+  background: radial-gradient(circle, $dark-mc 6%, $light-mc 100%);
   color: white;
   line-height: 1;
   padding: 4rem 0;
