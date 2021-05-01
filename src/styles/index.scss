@@ -1,5 +1,6 @@
 $dark-mc: #004eff;
 $light-mc: #55d0ff;
+$medium-mc: #35a3fd;
 
 * {
   box-sizing: border-box;
@@ -73,7 +74,7 @@ h2 {
 }
 
 .button {
-  background-color: rgb(82, 185, 245);
+  background-color: $medium-mc;
   border-radius: 0.5rem;
   color: white;
   cursor: pointer;
@@ -82,7 +83,7 @@ h2 {
   text-decoration: none;
 
   &:hover {
-    background-color: rgb(73, 98, 243);
+    background-color: $dark-mc;
   }
 
   &.button--postman {
