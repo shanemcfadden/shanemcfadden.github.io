@@ -29,12 +29,8 @@ h2 {
 }
 
 .banner {
-  background: rgb(24, 39, 204);
-  background: radial-gradient(
-    circle,
-    rgba(24, 39, 204, 1) 0%,
-    rgba(7, 12, 71, 1) 100%
-  );
+  background: #004eff;
+  background: radial-gradient(circle, #004eff 6%, #55d0ff 100%);
   color: white;
   line-height: 1;
   padding: 4rem 0;
