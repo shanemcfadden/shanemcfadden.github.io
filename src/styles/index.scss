@@ -1,5 +1,5 @@
 $dark-mc: #004eff;
-$light-black: #424242;
+$light-black: #333;
 $light-mc: #55d0ff;
 $medium-mc: #357cfd;
 
@@ -88,9 +88,9 @@ h2 {
   }
 
   &.button--github {
-    background-color: black;
+    background-color: $light-black;
     &:hover {
-      background-color: $light-black;
+      background-color: black;
     }
   }
 }
