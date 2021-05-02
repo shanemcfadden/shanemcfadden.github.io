@@ -1,6 +1,7 @@
 ---
 title: "mcfaddenpiano.com"
 githubRepo: "https://github.com/shanemcfadden/mcfaddenpiano.com"
+orderIndex: "2"
 siteLink: "https://mcfaddenpiano.com/"
 screenshotSlug: "mcfaddenpianoScreenshot.jpg"
 ---

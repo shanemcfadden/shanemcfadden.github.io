@@ -7,7 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const IndexPage = ({ data }) => {
-  const projects = data.allMarkdownRemark.nodes;
+  const projects = data.allMarkdownRemark.nodes.sort(
+    (a, b) => a.frontmatter.orderIndex - b.frontmatter.orderIndex
+  );
   const images = data.allImageSharp.nodes;
 
   const getImageDataFromSlug = (slug) => {
@@ -77,6 +79,7 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           githubRepo
+          orderIndex
           postmanDocs
           screenshotSlug
           siteLink

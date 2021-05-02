@@ -1,6 +1,7 @@
 ---
 title: "Interactive Pathfinder"
 githubRepo: "https://github.com/shanemcfadden/interactive-pathfinder"
+orderIndex: "0"
 siteLink: "https://shanemcfadden.github.io/interactive-pathfinder/"
 screenshotSlug: "interactivePathfinderScreenshot.jpg"
 ---

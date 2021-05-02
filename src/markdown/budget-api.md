@@ -1,6 +1,7 @@
 ---
 title: "Budget API"
 githubRepo: "https://github.com/shanemcfadden/budget-api"
+orderIndex: "1"
 postmanDocs: "https://documenter.getpostman.com/view/14663488/TzJuAdH2"
 screenshotSlug: "budgetAPIScreenshot.jpg"
 ---
