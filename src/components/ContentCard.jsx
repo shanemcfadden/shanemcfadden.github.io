@@ -1,10 +1,12 @@
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const ContentCard = ({
   title,
   githubRepo,
   postmanDocs,
   siteLink,
+  screenshotData,
   children,
 }) => {
   return (
@@ -22,6 +24,7 @@ const ContentCard = ({
             Project Documentation
           </a>
         )}
+        {screenshotData && <GatsbyImage image={screenshotData} alt={title} />}
         {githubRepo && (
           <a className="button button--github" href={githubRepo}>
             View on GitHub

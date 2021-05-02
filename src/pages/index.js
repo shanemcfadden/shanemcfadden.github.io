@@ -8,7 +8,21 @@ import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
-  console.log(projects);
+  const images = data.allImageSharp.nodes;
+
+  const getImageDataFromSlug = (slug) => {
+    if (!slug) return undefined;
+
+    const escapeRegex = (string) =>
+      string.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
+    const slugPattern = new RegExp(`${escapeRegex(slug)}$`);
+    const imageNode = images.find((data) => {
+      return data.gatsbyImageData.images.fallback.src.match(slugPattern);
+    });
+    return imageNode.gatsbyImageData;
+  };
+
+  console.log(getImageDataFromSlug("mcfaddenpianoScreenshot.jpg"));
   return (
     <main>
       <div className="banner">
@@ -30,7 +44,15 @@ const IndexPage = ({ data }) => {
       <div className="content-container">
         <h2>Recent projects</h2>
         {projects.map(({ frontmatter, html }, i) => {
-          const { title, githubRepo, postmanDocs, siteLink } = frontmatter;
+          console.log("frontmatter", frontmatter);
+          const {
+            title,
+            githubRepo,
+            postmanDocs,
+            siteLink,
+            screenshotSlug,
+          } = frontmatter;
+          const screenshotData = getImageDataFromSlug(screenshotSlug);
           return (
             <ContentCard
               key={i}
@@ -38,6 +60,7 @@ const IndexPage = ({ data }) => {
               githubRepo={githubRepo}
               siteLink={siteLink}
               postmanDocs={postmanDocs}
+              screenshotData={screenshotData}
             >
               {html}
             </ContentCard>
@@ -55,10 +78,20 @@ export const pageQuery = graphql`
         frontmatter {
           githubRepo
           postmanDocs
+          screenshotSlug
           siteLink
           title
         }
         html
+      }
+    }
+    allImageSharp {
+      nodes {
+        gatsbyImageData(
+          width: 800
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
       }
     }
   }
