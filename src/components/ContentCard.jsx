@@ -24,13 +24,19 @@ const ContentCard = ({
             Project Documentation
           </a>
         )}
-        {screenshotData && <GatsbyImage image={screenshotData} alt={title} />}
         {githubRepo && (
           <a className="button button--github" href={githubRepo}>
             View on GitHub
           </a>
         )}
       </div>
+      {screenshotData && (
+        <GatsbyImage
+          image={screenshotData}
+          alt={title}
+          style={{ margin: "1rem 0" }}
+        />
+      )}
     </div>
   );
 };
