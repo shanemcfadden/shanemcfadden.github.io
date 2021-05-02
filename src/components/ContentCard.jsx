@@ -31,11 +31,13 @@ const ContentCard = ({
         )}
       </div>
       {screenshotData && (
-        <GatsbyImage
-          image={screenshotData}
-          alt={title}
-          style={{ margin: "1rem 0" }}
-        />
+        <a href={siteLink || postmanDocs || githubRepo}>
+          <GatsbyImage
+            image={screenshotData}
+            alt={title}
+            style={{ margin: "1rem 0" }}
+          />
+        </a>
       )}
     </div>
   );
