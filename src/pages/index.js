@@ -15,6 +15,7 @@ const IndexPage = ({ data }) => {
 
     const escapeRegex = (string) =>
       string.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
+
     const slugPattern = new RegExp(`${escapeRegex(slug)}$`);
     const imageNode = images.find((data) => {
       return data.gatsbyImageData.images.fallback.src.match(slugPattern);
@@ -22,7 +23,6 @@ const IndexPage = ({ data }) => {
     return imageNode.gatsbyImageData;
   };
 
-  console.log(getImageDataFromSlug("mcfaddenpianoScreenshot.jpg"));
   return (
     <main>
       <div className="banner">
