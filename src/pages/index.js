@@ -7,9 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const IndexPage = ({ data }) => {
-  const projects = data.allMarkdownRemark.nodes.sort(
-    (a, b) => a.frontmatter.orderIndex - b.frontmatter.orderIndex
-  );
+  const projects = data.allMarkdownRemark.nodes;
   const images = data.allImageSharp.nodes;
 
   const getImageDataFromSlug = (slug) => {
@@ -75,7 +73,7 @@ const IndexPage = ({ data }) => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: frontmatter___orderIndex }) {
       nodes {
         frontmatter {
           githubRepo
