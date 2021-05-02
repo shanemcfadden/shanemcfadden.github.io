@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
     if (!slug) return undefined;
 
     const escapeRegex = (string) =>
-      string.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
+      string.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&"); // eslint-disable-line no-useless-escape
 
     const slugPattern = new RegExp(`${escapeRegex(slug)}$`);
     const imageNode = images.find((data) => {
