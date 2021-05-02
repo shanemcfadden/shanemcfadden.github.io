@@ -5,6 +5,7 @@ import ContentCard from "../components/ContentCard";
 import { graphql } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { Helmet } from "react-helmet";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
@@ -25,6 +26,9 @@ const IndexPage = ({ data }) => {
 
   return (
     <main>
+      <Helmet>
+        <title>Shane McFadden - Full-Stack Developer</title>
+      </Helmet>
       <div className="banner">
         <div className="content-container">
           <div>Hi, my name is</div>
