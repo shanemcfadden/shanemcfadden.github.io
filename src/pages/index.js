@@ -34,7 +34,7 @@ const IndexPage = ({ data }) => {
           <div>Hi, my name is</div>
           <h1 className="align-center">Shane McFadden</h1>
           <div className="align-center">and I'm a</div>
-          <h2 className="align-right">Full stack developer</h2>
+          <h2 className="align-right">Full-Stack Developer</h2>
           <div className="social-links">
             <a href="https://github.com/shanemcfadden">
               <FontAwesomeIcon icon={faGithubSquare} />
