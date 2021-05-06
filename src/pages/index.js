@@ -9,21 +9,6 @@ import { Helmet } from "react-helmet";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
-  const images = data.allImageSharp.nodes;
-
-  const getImageDataFromSlug = (slug) => {
-    if (!slug) return undefined;
-
-    const escapeRegex = (string) =>
-      string.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&"); // eslint-disable-line no-useless-escape
-
-    const slugPattern = new RegExp(`${escapeRegex(slug)}$`);
-    const imageNode = images.find((data) => {
-      return data.gatsbyImageData.images.fallback.src.match(slugPattern);
-    });
-    return imageNode.gatsbyImageData;
-  };
-
   return (
     <main>
       <Helmet>
@@ -48,15 +33,7 @@ const IndexPage = ({ data }) => {
       <div className="content-container">
         <h2>Recent projects</h2>
         {projects.map(({ frontmatter, html }, i) => {
-          console.log("frontmatter", frontmatter);
-          const {
-            title,
-            githubRepo,
-            postmanDocs,
-            siteLink,
-            screenshotSlug,
-          } = frontmatter;
-          const screenshotData = getImageDataFromSlug(screenshotSlug);
+          const { title, githubRepo, postmanDocs, siteLink } = frontmatter;
           return (
             <ContentCard
               key={i}
@@ -64,7 +41,6 @@ const IndexPage = ({ data }) => {
               githubRepo={githubRepo}
               siteLink={siteLink}
               postmanDocs={postmanDocs}
-              screenshotData={screenshotData}
             >
               {html}
             </ContentCard>
@@ -83,20 +59,10 @@ export const pageQuery = graphql`
           githubRepo
           orderIndex
           postmanDocs
-          screenshotSlug
           siteLink
           title
         }
         html
-      }
-    }
-    allImageSharp {
-      nodes {
-        gatsbyImageData(
-          width: 800
-          placeholder: BLURRED
-          formats: [AUTO, WEBP, AVIF]
-        )
       }
     }
   }

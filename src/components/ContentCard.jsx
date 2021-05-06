@@ -6,7 +6,6 @@ const ContentCard = ({
   githubRepo,
   postmanDocs,
   siteLink,
-  screenshotData,
   children,
 }) => {
   return (
@@ -30,11 +29,6 @@ const ContentCard = ({
           </a>
         )}
       </div>
-      {screenshotData && (
-        <a href={siteLink || postmanDocs || githubRepo} className="image__link">
-          <GatsbyImage image={screenshotData} alt={title} />
-        </a>
-      )}
     </div>
   );
 };
