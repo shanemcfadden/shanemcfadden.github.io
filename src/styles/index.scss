@@ -38,6 +38,11 @@ h2 {
   }
 }
 
+h3,
+.content-card h1 {
+  font-size: 1.5rem;
+}
+
 .banner {
   background: $dark-mc;
   background: radial-gradient(circle, $dark-mc 6%, $light-mc 100%);
