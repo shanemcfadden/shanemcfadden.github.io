@@ -1,16 +1,9 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const ContentCard = ({
-  title,
-  githubRepo,
-  postmanDocs,
-  siteLink,
-  children,
-}) => {
+const ContentCard = ({ githubRepo, postmanDocs, siteLink, children }) => {
   return (
     <div className="content-card">
-      <h3>{title}</h3>
       <div dangerouslySetInnerHTML={{ __html: children }} />
       <div className="button-row">
         {siteLink && (

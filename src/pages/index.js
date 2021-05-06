@@ -33,11 +33,10 @@ const IndexPage = ({ data }) => {
       <div className="content-container">
         <h2>Recent projects</h2>
         {projects.map(({ frontmatter, html }, i) => {
-          const { title, githubRepo, postmanDocs, siteLink } = frontmatter;
+          const { githubRepo, postmanDocs, siteLink } = frontmatter;
           return (
             <ContentCard
               key={i}
-              title={title}
               githubRepo={githubRepo}
               siteLink={siteLink}
               postmanDocs={postmanDocs}
@@ -60,7 +59,6 @@ export const pageQuery = graphql`
           orderIndex
           postmanDocs
           siteLink
-          title
         }
         html
       }
