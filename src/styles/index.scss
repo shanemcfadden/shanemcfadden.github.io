@@ -69,7 +69,8 @@ body {
   margin: $l-margin 0;
   padding: $l-margin;
 
-  > :first-child {
+  > :first-child,
+  > :first-child > :first-child {
     margin-top: 0;
   }
 
