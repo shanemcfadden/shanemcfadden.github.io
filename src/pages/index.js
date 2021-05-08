@@ -87,7 +87,7 @@ const IndexPage = ({ data }) => {
           and help develop software at a larger scale.
         </p>
         <div className="flex-columns">
-          <div>
+          <div className="content-card">
             <h1>Technical skills</h1>
             <div className="grid grid--two-columns">
               {technicalSkills.map((skill, i) => (
@@ -95,7 +95,7 @@ const IndexPage = ({ data }) => {
               ))}
             </div>
           </div>
-          <div>
+          <div className="content-card">
             <h1>Education</h1>
             <div>
               <h3>University of Michigan</h3>
