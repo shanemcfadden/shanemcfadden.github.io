@@ -99,13 +99,17 @@ const IndexPage = ({ data }) => {
             <h1>Education</h1>
             <p>
               <h3 className="margin-zero align-left">University of Michigan</h3>
-              <div>Master of Music </div>
+              <div>
+                <strong>Master of Music</strong>
+              </div>
               <div>Collaborative Piano</div>
               <div>2016-2018</div>
             </p>
             <p>
               <h3 className="margin-zero align-left">University of Kansas</h3>
-              <div>Bachelor of Music </div>
+              <div>
+                <strong>Bachelor of Music</strong>
+              </div>
               <div>Piano </div>
               <div>2012-2016</div>
             </p>
