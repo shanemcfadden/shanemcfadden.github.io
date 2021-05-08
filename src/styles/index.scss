@@ -58,15 +58,21 @@ h6 {
 }
 
 .flex-columns {
-  display: flex;
-  flex-direction: column;
+  display: block;
 
   @media only screen and (min-width: 500px) {
+    display: flex;
     flex-direction: row;
-  }
 
-  * {
-    flex-grow: 1;
+    align-items: flex-start;
+    > div {
+      flex-grow: 1;
+      margin-left: $l-margin;
+    }
+
+    > :first-child {
+      margin-left: 0;
+    }
   }
 }
 
