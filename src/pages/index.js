@@ -89,11 +89,11 @@ const IndexPage = ({ data }) => {
         <div className="flex-columns">
           <div>
             <h2>Technical skills</h2>
-            <ul>
+            <div>
               {technicalSkills.map((skill, i) => (
-                <li key={i}>{skill}</li>
+                <div key={i}>{skill}</div>
               ))}
-            </ul>
+            </div>
           </div>
           <div>
             <h2>Education</h2>
