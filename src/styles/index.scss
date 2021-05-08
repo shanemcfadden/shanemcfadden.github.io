@@ -63,10 +63,8 @@ h6 {
   @media only screen and (min-width: 500px) {
     display: flex;
     flex-direction: row;
-
     align-items: flex-start;
     > div {
-      flex-grow: 1;
       margin-left: $l-margin;
     }
 
@@ -181,4 +179,8 @@ h6 {
 
 .align-right {
   text-align: right;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
