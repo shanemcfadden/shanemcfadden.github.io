@@ -88,7 +88,7 @@ const IndexPage = ({ data }) => {
         </p>
         <div className="flex-columns">
           <div className="content-card flex-grow">
-            <h1>Technical skills</h1>
+            <h2>Technical skills</h2>
             <div className="grid grid--two-columns">
               {technicalSkills.map((skill, i) => (
                 <div key={i}>{skill}</div>
@@ -96,7 +96,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
           <div className="content-card">
-            <h1>Education</h1>
+            <h2>Education</h2>
             <p>
               <h3 className="margin-zero align-left">Master of Music</h3>
               <div>
