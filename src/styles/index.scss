@@ -16,6 +16,18 @@ body {
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  @media screen and (min-width: 500px) {
+    text-align: left;
+  }
+}
+
 .banner {
   background: $dark-mc;
   background: radial-gradient(circle, $dark-mc 6%, $light-mc 100%);
