@@ -109,6 +109,14 @@ h3,
   }
 }
 
+.grid {
+  display: grid;
+}
+
+.grid--two-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
 .button {
   background-color: $medium-mc;
   border-radius: 0.5rem;

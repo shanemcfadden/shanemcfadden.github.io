@@ -89,7 +89,7 @@ const IndexPage = ({ data }) => {
         <div className="flex-columns">
           <div>
             <h2>Technical skills</h2>
-            <div>
+            <div className="grid grid--two-columns">
               {technicalSkills.map((skill, i) => (
                 <div key={i}>{skill}</div>
               ))}
