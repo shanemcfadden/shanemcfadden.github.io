@@ -47,7 +47,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="content-container">
-        <h2>About me</h2>
+        <h1>About me</h1>
         <p>
           I moved to Chicago a few years ago with a couple of music degrees in
           hand and began my work as a professional musician. As a pianist, I
@@ -88,7 +88,7 @@ const IndexPage = ({ data }) => {
         </p>
         <div className="flex-columns">
           <div>
-            <h2>Technical skills</h2>
+            <h1>Technical skills</h1>
             <div className="grid grid--two-columns">
               {technicalSkills.map((skill, i) => (
                 <div key={i}>{skill}</div>
@@ -96,7 +96,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
           <div>
-            <h2>Education</h2>
+            <h1>Education</h1>
             <div>
               <h3>University of Michigan</h3>
               <div>Master of Music </div>
@@ -111,7 +111,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <h2>Recent projects</h2>
+        <h1>Recent projects</h1>
         {projects.map(({ frontmatter, html }, i) => {
           const { githubRepo, postmanDocs, siteLink } = frontmatter;
           return (

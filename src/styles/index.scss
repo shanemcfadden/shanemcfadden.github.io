@@ -16,33 +16,6 @@ body {
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
-h1,
-h2 {
-  text-align: center;
-  @media only screen and (min-width: 500px) {
-    text-align: left;
-  }
-}
-
-h1 {
-  font-size: 2rem;
-  @media only screen and (min-width: 500px) {
-    font-size: 4rem;
-  }
-}
-
-h2 {
-  font-size: 1.5rem;
-  @media only screen and (min-width: 500px) {
-    font-size: 3rem;
-  }
-}
-
-h3,
-.content-card h1 {
-  font-size: 1.5rem;
-}
-
 .banner {
   background: $dark-mc;
   background: radial-gradient(circle, $dark-mc 6%, $light-mc 100%);
