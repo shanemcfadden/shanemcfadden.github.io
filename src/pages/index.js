@@ -97,11 +97,18 @@ const IndexPage = ({ data }) => {
           </div>
           <div>
             <h2>Education</h2>
-            <p>
-              University of Michigan Master of Music Collaborative Piano
-              2016-2018
-            </p>
-            <p>University of Kansas Bachelor of Music Piano 2012-2016</p>
+            <div>
+              <h3>University of Michigan</h3>
+              <div>Master of Music </div>
+              <div>Collaborative Piano</div>
+              <div>2016-2018</div>
+            </div>
+            <div>
+              <h3>University of Kansas</h3>
+              <div>Bachelor of Music </div>
+              <div>Piano </div>
+              <div>2012-2016</div>
+            </div>
           </div>
         </div>
         <h2>Recent projects</h2>
