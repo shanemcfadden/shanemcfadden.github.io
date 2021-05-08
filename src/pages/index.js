@@ -97,13 +97,13 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="content-card">
             <h1>Education</h1>
-            <div className="content-card content-card--small">
+            <div>
               <h3 className="margin-zero">University of Michigan</h3>
               <div>Master of Music </div>
               <div>Collaborative Piano</div>
               <div>2016-2018</div>
             </div>
-            <div className="content-card content-card--small">
+            <div>
               <h3 className="margin-zero">University of Kansas</h3>
               <div>Bachelor of Music </div>
               <div>Piano </div>
