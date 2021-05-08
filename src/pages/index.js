@@ -9,6 +9,22 @@ import { Helmet } from "react-helmet";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
+  const technicalSkills = [
+    "Javascript",
+    "Typescript",
+    "React",
+    "React-Redux",
+    "NodeJS",
+    "Express",
+    "HTML",
+    "CSS",
+    "SCSS/SASS",
+    "MySQL",
+    "MongoDB",
+    "Firebase",
+    "GraphQL",
+    "Git/GitHub",
+  ];
   return (
     <main>
       <Helmet>
@@ -73,10 +89,11 @@ const IndexPage = ({ data }) => {
         <div className="flex-columns">
           <div>
             <h2>Technical skills</h2>
-            <p>
-              Javascript Typescript React React-Redux NodeJS Express HTML CSS
-              SCSS/SASS MySQL MongoDB Firebase GraphQL Git/GitHub
-            </p>
+            <ul>
+              {technicalSkills.map((skill, i) => (
+                <li key={i}>{skill}</li>
+              ))}
+            </ul>
           </div>
           <div>
             <h2>Education</h2>
