@@ -70,6 +70,11 @@ const IndexPage = ({ data }) => {
           objective is to work for a company where I can continue that growth
           and help develop software at a larger scale.
         </p>
+        <h2>Technical skills</h2>
+        <p>
+          Javascript Typescript React React-Redux NodeJS Express HTML CSS
+          SCSS/SASS MySQL MongoDB Firebase GraphQL Git/GitHub
+        </p>
         <h2>Recent projects</h2>
         {projects.map(({ frontmatter, html }, i) => {
           const { githubRepo, postmanDocs, siteLink } = frontmatter;
