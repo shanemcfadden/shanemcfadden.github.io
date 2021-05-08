@@ -71,6 +71,15 @@ h3,
   }
 }
 
+.flex-columns {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 500px) {
+    flex-direction: row;
+  }
+}
+
 .content-container {
   margin: 0 auto;
   max-width: 900px;
