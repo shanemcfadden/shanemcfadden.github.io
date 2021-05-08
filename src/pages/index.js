@@ -98,19 +98,19 @@ const IndexPage = ({ data }) => {
           <div className="content-card">
             <h1>Education</h1>
             <p>
-              <h3 className="margin-zero align-left">University of Michigan</h3>
+              <h3 className="margin-zero align-left">Master of Music</h3>
               <div>
-                <strong>Master of Music</strong>
+                <strong>Collaborative Piano</strong>
               </div>
-              <div>Collaborative Piano</div>
+              <div>University of Michigan</div>
               <div>2016-2018</div>
             </p>
             <p>
-              <h3 className="margin-zero align-left">University of Kansas</h3>
+              <h3 className="margin-zero align-left">Bachelor of Music</h3>
               <div>
-                <strong>Bachelor of Music</strong>
+                <strong>Piano </strong>
               </div>
-              <div>Piano </div>
+              <div>University of Kansas</div>
               <div>2012-2016</div>
             </p>
           </div>
