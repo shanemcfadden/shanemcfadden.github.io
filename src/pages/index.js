@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
 import FadeInSection from "../components/FadeInSection";
+import SkillRating from "../components/SkillRating";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
@@ -92,6 +93,7 @@ const IndexPage = ({ data }) => {
             <div className="content-card flex-grow">
               <h2 className="align-center">Technical skills</h2>
               <div className="grid grid--two-columns">
+                <SkillRating skill="Javascript" rating={4} />
                 {technicalSkills.map((skill, i) => (
                   <div key={i}>{skill}</div>
                 ))}
