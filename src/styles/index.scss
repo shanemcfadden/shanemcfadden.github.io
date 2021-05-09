@@ -198,6 +198,17 @@ a {
   }
 }
 
+.rating {
+  display: block;
+}
+.rating__block {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.1rem;
+  background-color: black;
+}
+
 .align-left {
   text-align: left;
 }

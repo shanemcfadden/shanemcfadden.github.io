@@ -5,6 +5,12 @@ const SkillRating = ({ skill, rating }) => {
     <div>
       {skill}
       {rating}
+
+      <div className="rating">
+        {Array.from({ length: 5 }).map(() => (
+          <div className="rating__block" />
+        ))}
+      </div>
     </div>
   );
 };
