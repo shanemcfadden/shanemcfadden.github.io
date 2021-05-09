@@ -12,20 +12,26 @@ import SkillRating from "../components/SkillRating";
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
   const technicalSkills = [
-    "Javascript",
-    "Typescript",
-    "React",
-    "React-Redux",
-    "NodeJS",
-    "Express",
-    "HTML",
-    "CSS",
-    "SCSS/SASS",
-    "MySQL",
-    "MongoDB",
-    "Firebase",
-    "GraphQL",
-    "Git/GitHub",
+    {
+      skill: "Javascript",
+      rating: 4,
+    },
+    {
+      skill: "Typescript",
+      rating: 3,
+    },
+    { skill: "React-Redux", rating: 3 },
+    { skill: "React", rating: 4 },
+    { skill: "NodeJS", rating: 4 },
+    { skill: "Express", rating: 4 },
+    { skill: "HTML", rating: 5 },
+    { skill: "CSS", rating: 4 },
+    { skill: "SCSS/SASS", rating: 3 },
+    { skill: "MySQL", rating: 3 },
+    { skill: "MongoDB", rating: 2 },
+    { skill: "Firebase", rating: 2 },
+    { skill: "GraphQL", rating: 2 },
+    { skill: "Git/Github", rating: 4 },
   ];
   return (
     <main>
@@ -93,9 +99,8 @@ const IndexPage = ({ data }) => {
             <div className="content-card flex-grow">
               <h2 className="align-center">Technical skills</h2>
               <div className="grid grid--two-columns">
-                <SkillRating skill="Javascript" rating={4} />
-                {technicalSkills.map((skill, i) => (
-                  <div key={i}>{skill}</div>
+                {technicalSkills.map(({ skill, rating }, i) => (
+                  <SkillRating skill={skill} rating={rating} key={i} />
                 ))}
               </div>
             </div>
