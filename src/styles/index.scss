@@ -50,10 +50,7 @@ h6 {
   h1,
   h2 {
     font-weight: 400;
-    margin: $s-margin auto;
-    @media screen and (min-width: $desktop-breakpoint) {
-      margin: $m-margin auto;
-    }
+    margin: $m-margin 0;
   }
 }
 
