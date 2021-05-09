@@ -7,6 +7,8 @@ $s-margin: 0.5rem;
 $m-margin: 1rem;
 $l-margin: 2rem;
 
+$desktop-breakpoint: 32rem;
+
 * {
   box-sizing: border-box;
 }
@@ -24,7 +26,7 @@ h4,
 h5,
 h6 {
   text-align: center;
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: $desktop-breakpoint) {
     text-align: left;
   }
 }
@@ -37,7 +39,7 @@ h6 {
   line-height: 1;
   padding: 4rem 0;
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: $desktop-breakpoint) {
     font-size: 1.9rem;
   }
 
@@ -49,7 +51,7 @@ h6 {
   h2 {
     font-weight: 400;
     margin: $s-margin auto;
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: $desktop-breakpoint) {
       margin: $m-margin auto;
     }
   }
@@ -58,7 +60,7 @@ h6 {
 .flex-columns {
   display: block;
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: $desktop-breakpoint) {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -147,7 +149,7 @@ h6 {
     width: 100%;
   }
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: $desktop-breakpoint) {
     flex-direction: row;
 
     .button {
