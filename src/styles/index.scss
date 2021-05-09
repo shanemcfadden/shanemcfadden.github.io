@@ -32,6 +32,15 @@ h6 {
   }
 }
 
+a {
+  &:visited,
+  &:link,
+  &:hover,
+  &:active {
+    color: $dark-mc;
+  }
+}
+
 .banner {
   background: $dark-mc;
   background: radial-gradient(circle, $dark-mc 6%, $light-mc 100%);
@@ -117,19 +126,27 @@ h6 {
 .button {
   background-color: $medium-mc;
   border-radius: 0.5rem;
-  color: white;
   cursor: pointer;
   margin: 0 $s-margin;
   padding: $s-margin $m-margin;
   text-decoration: none;
 
-  &:hover {
+  &:visited,
+  &:link,
+  &:hover,
+  &:active {
+    color: white;
+  }
+
+  &:hover,
+  &:active {
     background-color: $dark-mc;
   }
 
   &.button--github {
     background-color: $light-black;
-    &:hover {
+    &:hover,
+    &:active {
       background-color: black;
     }
   }
