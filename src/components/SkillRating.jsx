@@ -4,11 +4,13 @@ const SkillRating = ({ skill, rating }) => {
   return (
     <div>
       {skill}
-      {rating}
-
       <div className="rating">
-        {Array.from({ length: 5 }).map(() => (
-          <div className="rating__block" />
+        {Array.from({ length: 5 }).map((el, i) => (
+          <div
+            className={`rating__block${
+              i < rating ? " rating__block--filled" : ""
+            }`}
+          />
         ))}
       </div>
     </div>

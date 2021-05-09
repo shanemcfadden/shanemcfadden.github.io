@@ -206,7 +206,11 @@ a {
   height: 1rem;
   width: 1rem;
   margin: 0 0.1rem;
-  background-color: black;
+  background-color: $light-black;
+}
+
+.rating__block--filled {
+  background-color: $light-mc;
 }
 
 .align-left {
