@@ -118,6 +118,7 @@ a {
 
 .grid {
   display: grid;
+  column-gap: $m-margin;
 }
 
 .grid--two-columns {
