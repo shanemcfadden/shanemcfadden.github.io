@@ -199,8 +199,10 @@ a {
 }
 
 .rating {
-  display: block;
+  display: flex;
+  justify-content: space-between;
 }
+
 .rating__block {
   display: inline-block;
   height: 1rem;

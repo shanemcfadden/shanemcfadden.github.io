@@ -2,9 +2,9 @@ import React from "react";
 
 const SkillRating = ({ skill, rating }) => {
   return (
-    <div>
-      {skill}
-      <div className="rating">
+    <div className="rating">
+      <div>{skill}</div>
+      <div className="rating__blocks">
         {Array.from({ length: 5 }).map((el, i) => (
           <div
             className={`rating__block${
