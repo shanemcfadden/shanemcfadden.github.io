@@ -204,6 +204,10 @@ a {
   justify-content: space-between;
 }
 
+.rating__blocks {
+  display: flex;
+}
+
 .rating__block {
   display: inline-block;
   height: 1rem;
