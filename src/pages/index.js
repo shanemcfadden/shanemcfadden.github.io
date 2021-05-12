@@ -122,14 +122,15 @@ const IndexPage = ({ data }) => {
         {projects.map(({ frontmatter, html }, i) => {
           const { githubRepo, postmanDocs, siteLink } = frontmatter;
           return (
-            <ContentCard
-              key={i}
-              githubRepo={githubRepo}
-              siteLink={siteLink}
-              postmanDocs={postmanDocs}
-            >
-              {html}
-            </ContentCard>
+            <FadeInSection key={i}>
+              <ContentCard
+                githubRepo={githubRepo}
+                siteLink={siteLink}
+                postmanDocs={postmanDocs}
+              >
+                {html}
+              </ContentCard>
+            </FadeInSection>
           );
         })}
       </div>
