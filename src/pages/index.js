@@ -6,6 +6,7 @@ import { graphql } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
+import FadeInSection from "../components/FadeInSection";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
@@ -86,35 +87,37 @@ const IndexPage = ({ data }) => {
           objective is to work for a company where I can continue that growth
           and help develop software at a larger scale.
         </p>
-        <div className="flex-columns">
-          <div className="content-card flex-grow">
-            <h2 className="align-center">Technical skills</h2>
-            <div className="grid grid--two-columns">
-              {technicalSkills.map((skill, i) => (
-                <div key={i}>{skill}</div>
-              ))}
+        <FadeInSection>
+          <div className="flex-columns">
+            <div className="content-card flex-grow">
+              <h2 className="align-center">Technical skills</h2>
+              <div className="grid grid--two-columns">
+                {technicalSkills.map((skill, i) => (
+                  <div key={i}>{skill}</div>
+                ))}
+              </div>
+            </div>
+            <div className="content-card">
+              <h2 className="align-center">Education</h2>
+              <p>
+                <h3 className="margin-zero align-left">Master of Music</h3>
+                <div>
+                  <strong>Collaborative Piano</strong>
+                </div>
+                <div>University of Michigan</div>
+                <div>2016-2018</div>
+              </p>
+              <p>
+                <h3 className="margin-zero align-left">Bachelor of Music</h3>
+                <div>
+                  <strong>Piano </strong>
+                </div>
+                <div>University of Kansas</div>
+                <div>2012-2016</div>
+              </p>
             </div>
           </div>
-          <div className="content-card">
-            <h2 className="align-center">Education</h2>
-            <p>
-              <h3 className="margin-zero align-left">Master of Music</h3>
-              <div>
-                <strong>Collaborative Piano</strong>
-              </div>
-              <div>University of Michigan</div>
-              <div>2016-2018</div>
-            </p>
-            <p>
-              <h3 className="margin-zero align-left">Bachelor of Music</h3>
-              <div>
-                <strong>Piano </strong>
-              </div>
-              <div>University of Kansas</div>
-              <div>2012-2016</div>
-            </p>
-          </div>
-        </div>
+        </FadeInSection>
         <h1>Recent projects</h1>
         {projects.map(({ frontmatter, html }, i) => {
           const { githubRepo, postmanDocs, siteLink } = frontmatter;
