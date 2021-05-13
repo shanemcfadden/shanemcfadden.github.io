@@ -9,31 +9,10 @@ import { Helmet } from "react-helmet";
 import FadeInSection from "../components/FadeInSection";
 import SkillRating from "../components/SkillRating";
 import ABOUT_ME from "../content/AboutMe";
+import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
-  const technicalSkills = [
-    {
-      skill: "Javascript",
-      rating: 4,
-    },
-    {
-      skill: "Typescript",
-      rating: 3,
-    },
-    { skill: "React-Redux", rating: 3 },
-    { skill: "React", rating: 4 },
-    { skill: "NodeJS", rating: 4 },
-    { skill: "Express", rating: 4 },
-    { skill: "HTML", rating: 5 },
-    { skill: "CSS", rating: 4 },
-    { skill: "SCSS/SASS", rating: 3 },
-    { skill: "MySQL", rating: 3 },
-    { skill: "MongoDB", rating: 2 },
-    { skill: "Firebase", rating: 2 },
-    { skill: "GraphQL", rating: 2 },
-    { skill: "Git/Github", rating: 4 },
-  ];
   return (
     <main>
       <Helmet>
@@ -62,7 +41,7 @@ const IndexPage = ({ data }) => {
             <div className="content-card flex-grow">
               <h2 className="align-center">Technical skills</h2>
               <div className="grid grid--two-columns">
-                {technicalSkills.map(({ skill, rating }, i) => (
+                {TECHNICAL_SKILLS.map(({ skill, rating }, i) => (
                   <SkillRating skill={skill} rating={rating} key={i} />
                 ))}
               </div>
