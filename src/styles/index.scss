@@ -2,6 +2,7 @@ $dark-mc: #004eff;
 $light-black: #444;
 $light-mc: #55d0ff;
 $medium-mc: #357cfd;
+$off-white: #ddd;
 
 $s-margin: 0.5rem;
 $m-margin: 1rem;
@@ -213,11 +214,11 @@ a {
   height: 1rem;
   width: 1rem;
   margin: 0 0.1rem;
-  background-color: $light-black;
+  background-color: $off-white;
 }
 
 .rating__block--filled {
-  background-color: $light-mc;
+  background-color: $medium-mc;
 }
 
 .align-left {
