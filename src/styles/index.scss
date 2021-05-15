@@ -1,5 +1,6 @@
 @import "settings";
 @import "base";
+@import "content-card";
 @import "flex";
 @import "grid";
 @import "helpers"; // Must be last
@@ -30,31 +31,6 @@
 .content-container {
   margin: 0 auto;
   max-width: 54rem;
-  padding: $m-margin;
-}
-
-.content-card {
-  border-radius: 0.5rem;
-  box-shadow: 1px 1px 6px #999;
-  margin: $l-margin 0;
-  padding: $l-margin;
-
-  > :first-child,
-  > :first-child > :first-child {
-    margin-top: 0;
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  img[src$=".gif"] {
-    width: 100%;
-  }
-}
-
-.content-card--small {
-  margin: $m-margin 0;
   padding: $m-margin;
 }
 
