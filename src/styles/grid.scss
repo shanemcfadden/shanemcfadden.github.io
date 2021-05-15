@@ -1,0 +1,8 @@
+.grid {
+  display: grid;
+  column-gap: $m-margin;
+}
+
+.grid--auto-fit-12rem-columns {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
