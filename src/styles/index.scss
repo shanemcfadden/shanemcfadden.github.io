@@ -6,6 +6,7 @@
 @import "fade-in-section";
 @import "flex";
 @import "grid";
+@import "image";
 @import "rating";
 @import "helpers"; // Must be last
 
@@ -13,11 +14,6 @@
   margin: 0 auto;
   max-width: 54rem;
   padding: $m-margin;
-}
-
-.image__link {
-  display: block;
-  margin: $m-margin 0;
 }
 
 .social-links {
