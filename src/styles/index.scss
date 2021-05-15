@@ -1,5 +1,6 @@
 @import "settings";
 @import "base";
+@import "button";
 @import "content-card";
 @import "flex";
 @import "grid";
@@ -32,62 +33,6 @@
   margin: 0 auto;
   max-width: 54rem;
   padding: $m-margin;
-}
-
-.button {
-  background-color: $medium-mc;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  margin: 0 $s-margin;
-  padding: $s-margin $m-margin;
-  text-decoration: none;
-  transition: background-color $default-transition-style;
-
-  &:visited,
-  &:link,
-  &:hover,
-  &:active {
-    color: white;
-  }
-
-  &:hover,
-  &:active {
-    background-color: $dark-mc;
-  }
-
-  &.button--github {
-    background-color: $light-black;
-    &:hover,
-    &:active {
-      background-color: black;
-    }
-  }
-}
-
-.button-row {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: $m-margin 0;
-
-  .button {
-    margin: $s-margin auto;
-    text-align: center;
-    width: 100%;
-  }
-
-  @media only screen and (min-width: $desktop-breakpoint) {
-    flex-direction: row;
-
-    .button {
-      margin: 0 $s-margin;
-      width: auto;
-    }
-
-    :first-child {
-      margin-left: 0;
-    }
-  }
 }
 
 .image__link {
