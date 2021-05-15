@@ -1,0 +1,23 @@
+.flex-columns {
+  display: block;
+
+  @media only screen and (min-width: $desktop-breakpoint) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: $l-margin 0;
+    > div {
+      margin-bottom: 0;
+      margin-left: $l-margin;
+      margin-top: 0;
+    }
+
+    > :first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
