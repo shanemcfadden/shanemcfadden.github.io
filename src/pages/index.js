@@ -14,76 +14,103 @@ import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
   return (
-    <main>
-      <Helmet>
-        <title>Shane McFadden - Full-Stack Developer</title>
-      </Helmet>
-      <div className="banner">
-        <div className="content-container">
-          <div>Hi, my name is</div>
-          <h1 className="align-center">Shane McFadden</h1>
-          <div className="align-center">and I'm a</div>
-          <h2 className="align-right">Full-Stack Developer</h2>
-          <div className="social-links">
-            <a href="https://github.com/shanemcfadden">
-              <FontAwesomeIcon icon={faGithubSquare} />
-            </a>
-            <a href="https://linkedin.com">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="content-container">
-        {ABOUT_ME}
-        <FadeInSection>
-          <div className="content-card flex-grow">
-            <h2 className="align-center">Technical skills</h2>
-            <div className="grid grid--auto-fit-12rem-columns">
-              {TECHNICAL_SKILLS.map(({ skill, rating }, i) => (
-                <SkillRating skill={skill} rating={rating} key={i} />
-              ))}
+    <>
+      <main>
+        <Helmet>
+          <title>Shane McFadden - Full-Stack Developer</title>
+        </Helmet>
+        <div className="banner">
+          <div className="content-container">
+            <div>Hi, my name is</div>
+            <h1 className="align-center">Shane McFadden</h1>
+            <div className="align-center">and I'm a</div>
+            <h2 className="align-right">Full-Stack Developer</h2>
+            <div className="social-links">
+              <a
+                href="https://github.com/shanemcfadden"
+                className="social-link"
+              >
+                <FontAwesomeIcon
+                  className="social-link__icon"
+                  icon={faGithubSquare}
+                />
+              </a>
+              <a href="https://linkedin.com" className="social-link">
+                <FontAwesomeIcon
+                  className="social-link__icon"
+                  icon={faLinkedin}
+                />
+              </a>
             </div>
           </div>
-        </FadeInSection>
-        <FadeInSection>
-          <div className="content-card">
-            <h2 className="align-center">Education</h2>
-            <p>
-              <h3 className="margin-zero align-left">Master of Music</h3>
-              <div>
-                <strong>Collaborative Piano</strong>
+        </div>
+        <div className="content-container">
+          {ABOUT_ME}
+          <FadeInSection>
+            <div className="content-card flex-grow">
+              <h2 className="align-center">Technical skills</h2>
+              <div className="grid grid--auto-fit-12rem-columns">
+                {TECHNICAL_SKILLS.map(({ skill, rating }, i) => (
+                  <SkillRating skill={skill} rating={rating} key={i} />
+                ))}
               </div>
-              <div>University of Michigan</div>
-              <div>2016-2018</div>
-            </p>
-            <p>
-              <h3 className="margin-zero align-left">Bachelor of Music</h3>
-              <div>
-                <strong>Piano </strong>
-              </div>
-              <div>University of Kansas</div>
-              <div>2012-2016</div>
-            </p>
-          </div>
-        </FadeInSection>
-        <h1>Recent projects</h1>
-        {projects.map(({ frontmatter, html }, i) => {
-          const { githubRepo, postmanDocs, siteLink } = frontmatter;
-          return (
-            <FadeInSection key={i}>
-              <ContentCard
-                githubRepo={githubRepo}
-                siteLink={siteLink}
-                postmanDocs={postmanDocs}
-              >
-                {html}
-              </ContentCard>
-            </FadeInSection>
-          );
-        })}
-      </div>
-    </main>
+            </div>
+          </FadeInSection>
+          <FadeInSection>
+            <div className="content-card">
+              <h2 className="align-center">Education</h2>
+              <p>
+                <h3 className="margin-zero align-left">Master of Music</h3>
+                <div>
+                  <strong>Collaborative Piano</strong>
+                </div>
+                <div>University of Michigan</div>
+                <div>2016-2018</div>
+              </p>
+              <p>
+                <h3 className="margin-zero align-left">Bachelor of Music</h3>
+                <div>
+                  <strong>Piano </strong>
+                </div>
+                <div>University of Kansas</div>
+                <div>2012-2016</div>
+              </p>
+            </div>
+          </FadeInSection>
+          <h1>Recent projects</h1>
+          {projects.map(({ frontmatter, html }, i) => {
+            const { githubRepo, postmanDocs, siteLink } = frontmatter;
+            return (
+              <FadeInSection key={i}>
+                <ContentCard
+                  githubRepo={githubRepo}
+                  siteLink={siteLink}
+                  postmanDocs={postmanDocs}
+                >
+                  {html}
+                </ContentCard>
+              </FadeInSection>
+            );
+          })}
+        </div>
+      </main>
+      <footer>
+        <div className="social-links">
+          <a href="https://github.com/shanemcfadden" className="social-link">
+            <FontAwesomeIcon
+              className="social-link__icon-mc"
+              icon={faGithubSquare}
+            />
+          </a>
+          <a href="https://linkedin.com" className="social-link">
+            <FontAwesomeIcon
+              className="social-link__icon-mc"
+              icon={faLinkedin}
+            />
+          </a>
+        </div>
+      </footer>
+    </>
   );
 };
 

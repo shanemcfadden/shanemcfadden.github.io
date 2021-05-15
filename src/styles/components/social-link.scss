@@ -2,11 +2,22 @@
   display: flex;
   justify-content: center;
   margin-top: $l-margin;
+}
 
-  a,
-  a:visited {
-    color: white;
-    font-size: 3rem;
-    margin: 0 $s-margin;
-  }
+.social-link {
+  color: white;
+  font-size: 3rem;
+  margin: 0 $s-margin;
+}
+
+.social-link__icon {
+  color: white;
+}
+
+.social-link__icon-mc {
+  color: $medium-mc;
+}
+
+.social-link:hover > .social-link__icon-mc {
+  color: $dark-mc;
 }
