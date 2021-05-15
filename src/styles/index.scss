@@ -1,13 +1,13 @@
 @import "settings";
-@import "banner";
+@import "components/banner";
 @import "base";
 @import "button";
 @import "container";
-@import "content-card";
-@import "fade-in-section";
+@import "components/content-card";
+@import "components/fade-in-section";
 @import "flex";
 @import "grid";
 @import "image";
-@import "rating";
-@import "social-link";
+@import "components/rating";
+@import "components/social-link";
 @import "helpers"; // Must be last
