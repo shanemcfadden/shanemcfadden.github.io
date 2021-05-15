@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
           <div className="flex-columns">
             <div className="content-card flex-grow">
               <h2 className="align-center">Technical skills</h2>
-              <div className="grid grid--two-columns">
+              <div className="grid grid--auto-fit-12rem-columns">
                 {TECHNICAL_SKILLS.map(({ skill, rating }, i) => (
                   <SkillRating skill={skill} rating={rating} key={i} />
                 ))}
