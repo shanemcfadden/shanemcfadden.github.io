@@ -13,6 +13,7 @@
 
 .social-link__icon {
   color: white;
+  transition: color $default-transition-style;
 }
 
 .social-link__icon-mc {

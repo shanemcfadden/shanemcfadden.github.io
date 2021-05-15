@@ -98,13 +98,13 @@ const IndexPage = ({ data }) => {
         <div className="social-links">
           <a href="https://github.com/shanemcfadden" className="social-link">
             <FontAwesomeIcon
-              className="social-link__icon-mc"
+              className="social-link__icon social-link__icon-mc"
               icon={faGithubSquare}
             />
           </a>
           <a href="https://linkedin.com" className="social-link">
             <FontAwesomeIcon
-              className="social-link__icon-mc"
+              className="social-link__icon social-link__icon-mc"
               icon={faLinkedin}
             />
           </a>
