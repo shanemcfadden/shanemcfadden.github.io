@@ -1,5 +1,6 @@
 @import "settings";
 @import "base";
+@import "helpers"; // Must be last
 
 .banner {
   background: $dark-mc;
@@ -181,24 +182,8 @@
   background-color: $medium-mc;
 }
 
-.align-left {
-  text-align: left;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
 .flex-grow {
   flex-grow: 1;
-}
-
-.margin-zero {
-  margin: 0;
 }
 
 .fade-in-section {
