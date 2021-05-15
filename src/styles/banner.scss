@@ -1,0 +1,22 @@
+.banner {
+  background: $dark-mc;
+  background: radial-gradient(circle, $dark-mc 6%, $light-mc 100%);
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 4rem 0;
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    font-size: 1.9rem;
+  }
+
+  .content-container {
+    width: max-content;
+  }
+
+  h1,
+  h2 {
+    color: white;
+    font-weight: 400;
+  }
+}
