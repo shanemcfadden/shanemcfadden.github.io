@@ -2,6 +2,7 @@
 @import "banner";
 @import "base";
 @import "button";
+@import "container";
 @import "content-card";
 @import "fade-in-section";
 @import "flex";
@@ -9,12 +10,6 @@
 @import "image";
 @import "rating";
 @import "helpers"; // Must be last
-
-.content-container {
-  margin: 0 auto;
-  max-width: 54rem;
-  padding: $m-margin;
-}
 
 .social-links {
   display: flex;
