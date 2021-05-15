@@ -2,6 +2,7 @@
 @import "base";
 @import "button";
 @import "content-card";
+@import "fade-in-section";
 @import "flex";
 @import "grid";
 @import "rating";
@@ -52,18 +53,4 @@
     font-size: 3rem;
     margin: 0 $s-margin;
   }
-}
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(10vh);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-  visibility: hidden;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section--visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
 }
