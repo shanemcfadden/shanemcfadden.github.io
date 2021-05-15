@@ -37,34 +37,34 @@ const IndexPage = ({ data }) => {
       <div className="content-container">
         {ABOUT_ME}
         <FadeInSection>
-          <div className="flex-columns">
-            <div className="content-card flex-grow">
-              <h2 className="align-center">Technical skills</h2>
-              <div className="grid grid--auto-fit-12rem-columns">
-                {TECHNICAL_SKILLS.map(({ skill, rating }, i) => (
-                  <SkillRating skill={skill} rating={rating} key={i} />
-                ))}
+          <div className="content-card flex-grow">
+            <h2 className="align-center">Technical skills</h2>
+            <div className="grid grid--auto-fit-12rem-columns">
+              {TECHNICAL_SKILLS.map(({ skill, rating }, i) => (
+                <SkillRating skill={skill} rating={rating} key={i} />
+              ))}
+            </div>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="content-card">
+            <h2 className="align-center">Education</h2>
+            <p>
+              <h3 className="margin-zero align-left">Master of Music</h3>
+              <div>
+                <strong>Collaborative Piano</strong>
               </div>
-            </div>
-            <div className="content-card">
-              <h2 className="align-center">Education</h2>
-              <p>
-                <h3 className="margin-zero align-left">Master of Music</h3>
-                <div>
-                  <strong>Collaborative Piano</strong>
-                </div>
-                <div>University of Michigan</div>
-                <div>2016-2018</div>
-              </p>
-              <p>
-                <h3 className="margin-zero align-left">Bachelor of Music</h3>
-                <div>
-                  <strong>Piano </strong>
-                </div>
-                <div>University of Kansas</div>
-                <div>2012-2016</div>
-              </p>
-            </div>
+              <div>University of Michigan</div>
+              <div>2016-2018</div>
+            </p>
+            <p>
+              <h3 className="margin-zero align-left">Bachelor of Music</h3>
+              <div>
+                <strong>Piano </strong>
+              </div>
+              <div>University of Kansas</div>
+              <div>2012-2016</div>
+            </p>
           </div>
         </FadeInSection>
         <h1>Recent projects</h1>
