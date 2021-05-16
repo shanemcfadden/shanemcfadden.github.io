@@ -7,9 +7,11 @@ import { Helmet } from "react-helmet";
 import FadeInSection from "../components/FadeInSection";
 import SkillRating from "../components/SkillRating";
 import ABOUT_ME from "../content/AboutMe";
+import EDUCATION_DATA from "../content/EducationData";
 import SOCIAL_LINKS from "../content/SocialLinks";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SocialLinks from "../components/SocialLinks";
+import EducationCard from "../components/EducationCard";
 
 const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes;
@@ -43,22 +45,18 @@ const IndexPage = ({ data }) => {
           <FadeInSection>
             <div className="content-card">
               <h2 className="align-center">Education</h2>
-              <p>
-                <h3 className="margin-zero align-left">Master of Music</h3>
-                <div>
-                  <strong>Collaborative Piano</strong>
-                </div>
-                <div>University of Michigan</div>
-                <div>2016-2018</div>
-              </p>
-              <p>
-                <h3 className="margin-zero align-left">Bachelor of Music</h3>
-                <div>
-                  <strong>Piano </strong>
-                </div>
-                <div>University of Kansas</div>
-                <div>2012-2016</div>
-              </p>
+              {EDUCATION_DATA.map(
+                ({ school, degree, major, startYear, endYear }) => (
+                  <EducationCard
+                    key={startYear}
+                    school={school}
+                    degree={degree}
+                    major={major}
+                    startYear={startYear}
+                    endYear={endYear}
+                  />
+                )
+              )}
             </div>
           </FadeInSection>
           <h1>Recent projects</h1>
