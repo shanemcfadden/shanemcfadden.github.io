@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import FadeInSection from "../components/FadeInSection";
 import SkillRating from "../components/SkillRating";
 import ABOUT_ME from "../content/AboutMe";
+import SOCIAL_LINKS from "../content/SocialLinks";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SocialLinks from "../components/SocialLinks";
 
@@ -24,7 +25,7 @@ const IndexPage = ({ data }) => {
             <h1 className="align-center">Shane McFadden</h1>
             <div className="align-center">and I'm a</div>
             <h2 className="align-right">Full-Stack Developer</h2>
-            <SocialLinks />
+            <SocialLinks socialLinks={SOCIAL_LINKS} />
           </div>
         </div>
         <div className="content-container">
@@ -78,7 +79,7 @@ const IndexPage = ({ data }) => {
         </div>
       </main>
       <footer>
-        <SocialLinks color="mc" />
+        <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
       </footer>
     </>
   );
