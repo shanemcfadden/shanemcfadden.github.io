@@ -1,7 +1,7 @@
 import * as React from "react";
 import "normalize.css";
 import "../styles/index.scss";
-import ContentCard from "../components/ContentCard";
+import ProjectCard from "../components/ProjectCard";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import FadeInSection from "../components/FadeInSection";
@@ -66,13 +66,13 @@ const IndexPage = ({ data }) => {
             const { githubRepo, postmanDocs, siteLink } = frontmatter;
             return (
               <FadeInSection key={i}>
-                <ContentCard
+                <ProjectCard
                   githubRepo={githubRepo}
                   siteLink={siteLink}
                   postmanDocs={postmanDocs}
                 >
                   {html}
-                </ContentCard>
+                </ProjectCard>
               </FadeInSection>
             );
           })}

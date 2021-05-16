@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContentCard = ({ githubRepo, postmanDocs, siteLink, children }) => {
+const ProjectCard = ({ githubRepo, postmanDocs, siteLink, children }) => {
   return (
     <div className="content-card">
       <div dangerouslySetInnerHTML={{ __html: children }} />
@@ -25,4 +25,4 @@ const ContentCard = ({ githubRepo, postmanDocs, siteLink, children }) => {
   );
 };
 
-export default ContentCard;
+export default ProjectCard;
