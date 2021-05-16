@@ -65,15 +65,13 @@ const IndexPage = ({ data }) => {
           {projects.map(({ frontmatter, html }, i) => {
             const { githubRepo, postmanDocs, siteLink } = frontmatter;
             return (
-              <FadeInSection key={i}>
-                <ProjectCard
-                  githubRepo={githubRepo}
-                  siteLink={siteLink}
-                  postmanDocs={postmanDocs}
-                >
-                  {html}
-                </ProjectCard>
-              </FadeInSection>
+              <ProjectCard
+                githubRepo={githubRepo}
+                siteLink={siteLink}
+                postmanDocs={postmanDocs}
+                content={html}
+                key={i}
+              />
             );
           })}
         </div>
