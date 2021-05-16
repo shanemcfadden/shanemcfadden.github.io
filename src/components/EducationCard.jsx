@@ -2,7 +2,7 @@ import React from "react";
 
 const EducationCard = ({ school, degree, major, startYear, endYear }) => {
   return (
-    <p>
+    <div className="flex-grow">
       <h3 className="margin-zero align-left">{degree}</h3>
       <div>
         <strong>{major}</strong>
@@ -11,7 +11,7 @@ const EducationCard = ({ school, degree, major, startYear, endYear }) => {
       <div>
         {startYear}-{endYear}
       </div>
-    </p>
+    </div>
   );
 };
 

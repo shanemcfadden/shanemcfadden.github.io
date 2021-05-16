@@ -45,18 +45,20 @@ const IndexPage = ({ data }) => {
           <FadeInSection>
             <div className="content-card">
               <h2 className="align-center">Education</h2>
-              {EDUCATION_DATA.map(
-                ({ school, degree, major, startYear, endYear }) => (
-                  <EducationCard
-                    key={startYear}
-                    school={school}
-                    degree={degree}
-                    major={major}
-                    startYear={startYear}
-                    endYear={endYear}
-                  />
-                )
-              )}
+              <div className="flex-columns">
+                {EDUCATION_DATA.map(
+                  ({ school, degree, major, startYear, endYear }) => (
+                    <EducationCard
+                      key={startYear}
+                      school={school}
+                      degree={degree}
+                      major={major}
+                      startYear={startYear}
+                      endYear={endYear}
+                    />
+                  )
+                )}
+              </div>
             </div>
           </FadeInSection>
           <h1>Recent projects</h1>
