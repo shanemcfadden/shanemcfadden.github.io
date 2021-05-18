@@ -17,9 +17,9 @@ const IndexPage = ({ data }) => {
   const aboutMeContent = markdownNodes.find(
     (node) => !!node.fileAbsolutePath.match(/.*\/about-me\.md$/)
   ).html;
-  const projects = markdownNodes.filter(
-    (node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/)
-  );
+  const projects = markdownNodes
+    .filter((node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/))
+    .sort((a, b) => a.frontmatter.orderIndex - b.frontmatter.orderIndex);
   return (
     <>
       <main>
