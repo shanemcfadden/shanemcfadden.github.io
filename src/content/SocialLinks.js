@@ -4,10 +4,12 @@ const SOCIAL_LINKS = [
   {
     link: "https://github.com/shanemcfadden",
     icon: faGithubSquare,
+    title: "GitHub Profile",
   },
   {
     link: "https://linkedin.com",
     icon: faLinkedin,
+    title: "LinkedIn Profile",
   },
 ];
 
