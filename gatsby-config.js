@@ -12,7 +12,7 @@ module.exports = {
         name: `Shane McFadden Portfolio`,
         short_name: `SM Portfolio`,
         start_url: `/`,
-        background_color: `fff`,
+        background_color: `#ffffff`,
         theme_color: `#357cfd`,
         display: `standalone`,
         icon: "src/images/icon.png",
