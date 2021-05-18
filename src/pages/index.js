@@ -85,7 +85,6 @@ const IndexPage = ({ data }) => {
   );
 };
 
-// allMarkdownRemark(sort: { fields: frontmatter___orderIndex }) {
 export const pageQuery = graphql`
   query {
     allMarkdownRemark {
