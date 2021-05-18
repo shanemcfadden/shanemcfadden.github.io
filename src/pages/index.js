@@ -11,6 +11,7 @@ import SOCIAL_LINKS from "../content/SocialLinks";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SocialLinks from "../components/SocialLinks";
 import EducationCard from "../components/EducationCard";
+import PAGE_DESCRIPTION from "../content/PageDescription";
 
 const IndexPage = ({ data }) => {
   const markdownNodes = data.allMarkdownRemark.nodes;
@@ -25,6 +26,7 @@ const IndexPage = ({ data }) => {
       <main>
         <Helmet>
           <html lang="en" />
+          <meta name="description" content={PAGE_DESCRIPTION} />
           <title>Shane McFadden - Software Developer</title>
         </Helmet>
         <div className="banner">
