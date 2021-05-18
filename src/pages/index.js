@@ -24,6 +24,7 @@ const IndexPage = ({ data }) => {
     <>
       <main>
         <Helmet>
+          <html lang="en" />
           <title>Shane McFadden - Software Developer</title>
         </Helmet>
         <div className="banner">
