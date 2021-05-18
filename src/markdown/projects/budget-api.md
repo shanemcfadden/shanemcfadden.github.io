@@ -18,4 +18,4 @@ This is a back-end REST API for tracking budget data that can be attached to a f
 - Mocha, Chai, & Sinon (unit tests)
 - Postman (integration tests/documentation)
 
-[![Budget API Documentation](../images/budgetAPIScreenshot.jpg)](https://documenter.getpostman.com/view/14663488/TzJuAdH2)
+[![Budget API Documentation](../../images/budgetAPIScreenshot.jpg)](https://documenter.getpostman.com/view/14663488/TzJuAdH2)

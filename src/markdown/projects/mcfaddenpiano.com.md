@@ -16,4 +16,4 @@ This project started when I outgrew SquareSpace. Although it was a wonderful way
 - Sass (a CSS extension language)
 - Netlify CDN
 
-[![mcfaddenpiano.com screenshot](../images/mcfaddenpianoScreenshot.jpg)](https://mcfaddenpiano.com)
+[![mcfaddenpiano.com screenshot](../../images/mcfaddenpianoScreenshot.jpg)](https://mcfaddenpiano.com)
