@@ -7,6 +7,18 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Shane McFadden Portfolio`,
+        short_name: `SM Portfolio`,
+        start_url: `/`,
+        background_color: `fff`,
+        theme_color: `#357cfd`,
+        display: `standalone`,
+        icon: "src/images/icon.png",
+      },
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
