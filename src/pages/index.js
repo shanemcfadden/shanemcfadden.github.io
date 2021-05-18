@@ -14,7 +14,9 @@ import SocialLinks from "../components/SocialLinks";
 import EducationCard from "../components/EducationCard";
 
 const IndexPage = ({ data }) => {
-  const projects = data.allMarkdownRemark.nodes;
+  const projects = data.allMarkdownRemark.nodes.filter(
+    (node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/)
+  );
   return (
     <>
       <main>
@@ -83,9 +85,10 @@ const IndexPage = ({ data }) => {
   );
 };
 
+// allMarkdownRemark(sort: { fields: frontmatter___orderIndex }) {
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: frontmatter___orderIndex }) {
+    allMarkdownRemark {
       nodes {
         frontmatter {
           githubRepo
@@ -93,6 +96,7 @@ export const pageQuery = graphql`
           postmanDocs
           siteLink
         }
+        fileAbsolutePath
         html
       }
     }
