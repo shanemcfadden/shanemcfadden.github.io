@@ -1,4 +1,4 @@
-export default [
+const TECHNICAL_SKILLS = [
   {
     skill: "Javascript",
     rating: 4,
@@ -20,3 +20,5 @@ export default [
   { skill: "GraphQL", rating: 2 },
   { skill: "Git/Github", rating: 4 },
 ];
+
+export default TECHNICAL_SKILLS;
