@@ -7,6 +7,10 @@ const TECHNICAL_SKILLS = [
     skill: "Typescript",
     rating: 3,
   },
+  {
+    skill: "Python",
+    rating: 2,
+  },
   { skill: "React-Redux", rating: 3 },
   { skill: "React", rating: 4 },
   { skill: "NodeJS", rating: 4 },
@@ -18,7 +22,6 @@ const TECHNICAL_SKILLS = [
   { skill: "MongoDB", rating: 2 },
   { skill: "Firebase", rating: 2 },
   { skill: "GraphQL", rating: 2 },
-  { skill: "Git/Github", rating: 4 },
 ];
 
 export default TECHNICAL_SKILLS;
