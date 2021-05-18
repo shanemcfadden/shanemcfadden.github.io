@@ -13,12 +13,13 @@ import SocialLinks from "../components/SocialLinks";
 import EducationCard from "../components/EducationCard";
 
 const IndexPage = ({ data }) => {
-  const projects = data.allMarkdownRemark.nodes.filter(
-    (node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/)
-  );
-  const aboutMeContent = data.allMarkdownRemark.nodes.find(
+  const markdownNodes = data.allMarkdownRemark.nodes;
+  const aboutMeContent = markdownNodes.find(
     (node) => !!node.fileAbsolutePath.match(/.*\/about-me\.md$/)
   ).html;
+  const projects = markdownNodes.filter(
+    (node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/)
+  );
   return (
     <>
       <main>
