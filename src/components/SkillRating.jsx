@@ -10,6 +10,7 @@ const SkillRating = ({ skill, rating }) => {
             className={`rating__block${
               i < rating ? " rating__block--filled" : ""
             }`}
+            key={`block-${i}`}
           />
         ))}
       </div>
