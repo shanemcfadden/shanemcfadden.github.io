@@ -17,6 +17,9 @@ const IndexPage = ({ data }) => {
   const projects = data.allMarkdownRemark.nodes.filter(
     (node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/)
   );
+  const aboutMeContent = data.allMarkdownRemark.nodes.find(
+    (node) => !!node.fileAbsolutePath.match(/.*\/about-me\.md$/)
+  ).html;
   return (
     <>
       <main>
@@ -33,7 +36,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
         <div className="content-container">
-          {ABOUT_ME}
+          <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
           <FadeInSection>
             <div className="content-card flex-grow">
               <h2 className="align-center">Technical skills</h2>
