@@ -11,7 +11,7 @@ const TECHNICAL_SKILLS = [
   { skill: "React-Redux", rating: 3 },
   { skill: "HTML", rating: 4 },
   { skill: "CSS", rating: 4 },
-  { skill: "SCSS/SASS", rating: 3 },
+  { skill: "SCSS/Sass", rating: 3 },
   { skill: "NodeJS", rating: 4 },
   { skill: "Express", rating: 4 },
   { skill: "MySQL", rating: 3 },
