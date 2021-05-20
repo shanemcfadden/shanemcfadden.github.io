@@ -1,4 +1,5 @@
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+// import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const SOCIAL_LINKS = [
   {
@@ -6,11 +7,11 @@ const SOCIAL_LINKS = [
     icon: faGithubSquare,
     title: "GitHub Profile",
   },
-  {
-    link: "https://linkedin.com",
-    icon: faLinkedin,
-    title: "LinkedIn Profile",
-  },
+  // {
+  //   link: "https://linkedin.com",
+  //   icon: faLinkedin,
+  //   title: "LinkedIn Profile",
+  // },
 ];
 
 export default SOCIAL_LINKS;
