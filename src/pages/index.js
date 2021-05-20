@@ -27,14 +27,14 @@ const IndexPage = ({ data }) => {
         <Helmet>
           <html lang="en" />
           <meta name="description" content={PAGE_DESCRIPTION} />
-          <title>Shane McFadden - Software Developer</title>
+          <title>Shane McFadden - Software Engineer</title>
         </Helmet>
         <div className="banner">
           <div className="content-container">
             <div>Hi, my name is</div>
             <h1 className="align-center">Shane McFadden</h1>
             <div className="align-center">and I'm a</div>
-            <h2 className="align-right">Software Developer</h2>
+            <h2 className="align-right">Software engineer</h2>
             <SocialLinks socialLinks={SOCIAL_LINKS} />
           </div>
         </div>
