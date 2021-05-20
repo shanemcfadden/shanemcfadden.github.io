@@ -10,7 +10,7 @@ This is a back-end REST API for tracking budget data that can be attached to a f
 
 ### Technology used
 
-- Typescript
+- TypeScript
 - NodeJS
 - Express (NodeJS web framework)
 - MySQL (SQL Database)

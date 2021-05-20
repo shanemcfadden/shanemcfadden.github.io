@@ -4,7 +4,7 @@ const TECHNICAL_SKILLS = [
     rating: 4,
   },
   {
-    skill: "Typescript",
+    skill: "TypeScript",
     rating: 3,
   },
   { skill: "React", rating: 4 },
