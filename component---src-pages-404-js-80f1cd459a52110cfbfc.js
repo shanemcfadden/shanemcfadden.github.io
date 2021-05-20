@@ -1,0 +1,2 @@
+(self.webpackChunkgithub_homepage=self.webpackChunkgithub_homepage||[]).push([[883],{9616:function(e,t,u){"use strict";u.r(t);var n=u(7294),a=u(9499);t.default=function(){return(0,n.useEffect)((function(){(0,a.navigate)("https://shanemcfadden.github.io/")}),[]),null}}}]);
+//# sourceMappingURL=component---src-pages-404-js-80f1cd459a52110cfbfc.js.map
