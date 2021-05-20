@@ -12,6 +12,7 @@ const SocialLinks = ({ color, socialLinks }) => {
             }`}
             title={title}
             icon={icon}
+            size="1x"
           />
         </a>
       ))}
