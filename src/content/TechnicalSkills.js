@@ -1,6 +1,6 @@
 const TECHNICAL_SKILLS = [
   {
-    skill: "Javascript",
+    skill: "JavaScript",
     rating: 4,
   },
   {

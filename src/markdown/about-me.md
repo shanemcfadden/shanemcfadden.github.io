@@ -17,7 +17,7 @@ However, I decided to use that extra time to my advantage. I had never
 taken a computer science course in school, but I was always fascinated by
 the idea of being able to build a webpage or automate a task by writing a
 few lines of code. Fueled by a rabid curiosity and a love of learning, I
-took online courses in HTML, CSS, and Javascript on Skillshare and Udemy.
+took online courses in HTML, CSS, and JavaScript on Skillshare and Udemy.
 That led to more coursework in data structures, algorithms, and back-end
 technologies. After months of absorbing information from step-by-step
 classes, I decided to put my skills to the test and begin making my own
