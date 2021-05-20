@@ -29,6 +29,13 @@ const IndexPage = ({ data }) => {
           <html lang="en" />
           <meta name="description" content={PAGE_DESCRIPTION} />
           <title>Shane McFadden - Software Engineer</title>
+          <meta
+            property="og:title"
+            content="Shane McFadden - Software Engineer"
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://shanemcfadden.github.io/" />
+          <meta property="og:description" content={PAGE_DESCRIPTION} />
         </Helmet>
         <div className="banner">
           <div className="content-container">
