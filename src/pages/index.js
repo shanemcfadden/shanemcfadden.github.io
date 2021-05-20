@@ -55,14 +55,20 @@ const IndexPage = ({ data }) => {
               <h2 className="align-center">Education</h2>
               <div className="flex-columns">
                 {EDUCATION_DATA.map(
-                  ({ school, degree, major, startYear, endYear }) => (
+                  ({
+                    school,
+                    degree,
+                    major,
+                    graduationMonth,
+                    graduationYear,
+                  }) => (
                     <EducationCard
-                      key={startYear}
+                      key={graduationYear}
                       school={school}
                       degree={degree}
                       major={major}
-                      startYear={startYear}
-                      endYear={endYear}
+                      graduationMonth={graduationMonth}
+                      graduationYear={graduationYear}
                     />
                   )
                 )}
