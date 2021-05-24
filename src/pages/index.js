@@ -44,6 +44,15 @@ const IndexPage = ({ data }) => {
             property="twitter:image"
             content="https://shanemcfadden.github.io/twitter-image.jpg"
           />
+          <script type="application/ld+json">
+            {`{
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Shane McFadden",
+              "jobTitle": "Software Developer",
+              "url": "https://shanemcfadden.github.io"
+            }`}
+          </script>
         </Helmet>
         <div className="banner">
           <div className="content-container">
