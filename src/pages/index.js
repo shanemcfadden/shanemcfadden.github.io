@@ -28,10 +28,10 @@ const IndexPage = ({ data }) => {
         <Helmet>
           <html lang="en" />
           <meta name="description" content={PAGE_DESCRIPTION} />
-          <title>Shane McFadden - Software Engineer</title>
+          <title>Shane McFadden - Software Developer</title>
           <meta
             property="og:title"
-            content="Shane McFadden - Software Engineer"
+            content="Shane McFadden - Software Developer"
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://shanemcfadden.github.io/" />
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
             <div>Hi, my name is</div>
             <h1 className="align-center">Shane McFadden</h1>
             <div className="align-center">and I'm a</div>
-            <h2 className="align-right">Software engineer</h2>
+            <h2 className="align-right">Software Developer</h2>
             <SocialLinks socialLinks={SOCIAL_LINKS} />
           </div>
         </div>
