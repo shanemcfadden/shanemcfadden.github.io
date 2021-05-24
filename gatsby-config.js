@@ -11,6 +11,22 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-CS6MHX4ZDB", // Google Analytics / GA
+        ],
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Shane McFadden Portfolio`,
