@@ -40,6 +40,10 @@ const IndexPage = ({ data }) => {
             property="og:image"
             content="https://shanemcfadden.github.io/og-image.jpg"
           />
+          <meta
+            property="twitter:image"
+            content="https://shanemcfadden.github.io/twitter-image.jpg"
+          />
         </Helmet>
         <div className="banner">
           <div className="content-container">
