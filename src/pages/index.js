@@ -29,6 +29,7 @@ const IndexPage = ({ data }) => {
           <html lang="en" />
           <meta name="description" content={PAGE_DESCRIPTION} />
           <title>Shane McFadden - Software Developer</title>
+          <link rel="canonical" href={"https://shanemcfadden.github.io"} />
           <meta
             property="og:title"
             content="Shane McFadden - Software Developer"
