@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: "github-homepage",
+    siteUrl: "https://shanemcfadden.github.io",
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
