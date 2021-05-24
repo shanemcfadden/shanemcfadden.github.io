@@ -17,13 +17,13 @@ However, I decided to use that extra time to my advantage. I had never
 taken a computer science course in school, but I was always fascinated by
 the idea of being able to build a webpage or automate a task by writing a
 few lines of code. Fueled by a rabid curiosity and a love of learning, I
-took online courses in HTML, CSS, and JavaScript on Skillshare and Udemy.
+took online courses in JavaScript, CSS, and HTML on Skillshare and Udemy.
 That led to more coursework in data structures, algorithms, and back-end
 technologies. After months of absorbing information from step-by-step
 classes, I decided to put my skills to the test and begin making my own
 projects, even as my music work began to pick back up again.
 
-Today I'm excited to see where these new skills will take me. It's been
+Today, I'm excited to see where these new skills will take me. It's been
 incredibly fulfilling to start a project, run into unexpected challenges
 along the way, and come out on the other side of them even more
 knowledgeable than before. Because my entire progression thus far has been
