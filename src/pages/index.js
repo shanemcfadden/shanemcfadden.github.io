@@ -27,8 +27,8 @@ const IndexPage = ({ data }) => {
       <main>
         <Helmet>
           <html lang="en" />
-          <meta name="description" content={PAGE_DESCRIPTION} />
           <title>Shane McFadden - Software Developer</title>
+          <meta name="description" content={PAGE_DESCRIPTION} />
           <link rel="canonical" href={"https://shanemcfadden.github.io"} />
           <meta
             property="og:title"
