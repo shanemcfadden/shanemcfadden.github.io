@@ -36,6 +36,10 @@ const IndexPage = ({ data }) => {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://shanemcfadden.github.io/" />
           <meta property="og:description" content={PAGE_DESCRIPTION} />
+          <meta
+            property="og:image"
+            content="https://shanemcfadden.github.io/og-image.jpg"
+          />
         </Helmet>
         <div className="banner">
           <div className="content-container">
