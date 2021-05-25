@@ -7,11 +7,9 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import FadeInSection from "../components/FadeInSection";
 import SkillRating from "../components/SkillRating";
-import EDUCATION_DATA from "../content/EducationData";
 import SOCIAL_LINKS from "../content/SocialLinks";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SocialLinks from "../components/SocialLinks";
-import EducationCard from "../components/EducationCard";
 import PAGE_DESCRIPTION from "../content/PageDescription";
 
 const IndexPage = ({ data }) => {
