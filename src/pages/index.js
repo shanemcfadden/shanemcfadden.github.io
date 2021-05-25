@@ -68,7 +68,7 @@ const IndexPage = ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
           <FadeInSection>
             <div className="content-card flex-grow">
-              <h2 className="align-center">Technical skills</h2>
+              <h2 className="align-center">Technical Skills</h2>
               <div className="grid grid--auto-fit-12rem-columns">
                 {TECHNICAL_SKILLS.map(({ skill, rating }, i) => (
                   <SkillRating skill={skill} rating={rating} key={i} />
