@@ -1,33 +1,18 @@
-# About me
+# Profile
 
-I moved to Chicago a few years ago with a couple of music degrees in hand
-and began my work as a professional musician. As a pianist, I accompanied
-classical singers and instrumentalists at countless recitals, classes, and
-other events. The bulk of my daily work was as a vocal coach, where I
-helped vocalists tackle the challenges of performing their music with a
-compelling interpretation and crystal clear diction in any language they
-needed to sing.
+A full-stack developer passionate about making people's lives easier with the power of technology.
+I began my career as a pianist and vocal coach, refining hundreds of hours of music from their first read through to their final performance.
+During the COVID-19 shutdown, my interests shifted, and I used the extra time at home as an opportunity to teach myself to code.
+Today I use my growing technical skills and my established musicianship skills in tandem to build new software from scratch.
 
-In March of 2020, in-person work shut down completely due to the COVID-19
-pandemic, and it was no longer safe to rehearse, perform, or even sing in
-communal spaces. Besides doing a few accompaniment recordings and online
-coachings each week, my music work essentially disappeared overnight.
+## As a Developer, I Can...
 
-However, I decided to use that extra time to my advantage. I had never
-taken a computer science course in school, but I was always fascinated by
-the idea of being able to build a webpage or automate a task by writing a
-few lines of code. Fueled by a rabid curiosity and a love of learning, I
-took online courses in JavaScript, CSS, and HTML on Skillshare and Udemy.
-That led to more coursework in data structures, algorithms, and back-end
-technologies. After months of absorbing information from step-by-step
-classes, I decided to put my skills to the test and begin making my own
-projects, even as my music work began to pick back up again.
+- **Implement Projects and Features Independently:** While building a few projects in online courses using step-by-step instructions, it felt like the instructor was doing the bulk of the thinking for me. I made it a priority to build each of the projects below without a guide using a combination of familiar and unfamiliar tools. This allowed me to encounter more challenges and hone my ability to solve them without a safety net.
+- **Build Front-end and Back-end Tools:** From reactive front-end applications like Interactive Pathfinder to robust back-end servers like Budget API, I have experience designing and building projects for various layers of large-scale applications.
+- **Learn New Software Stacks:** The bulk of my growth as a developer thus far has been self directed. Therefore, I'm confident that I can continue learning new tools independently or as part of an experienced team.
 
-Today, I'm excited to see where these new skills will take me. It's been
-incredibly fulfilling to start a project, run into unexpected challenges
-along the way, and come out on the other side of them even more
-knowledgeable than before. Because my entire progression thus far has been
-self-taught, I'm confident in my ability to dig deeper into my existing
-skills and learn new tech stacks as a member of a team. My objective is to
-work for a company where I can continue that growth and help develop
-software at a larger scale.
+## As a Musician, I've Learned to...
+
+- **Communicate Effectively with Teammates:** Whether I'm collaborating with a single violinist for a recital or directing thirty vocalists for an opera, I've found that performances only go smoothly when each person communicates their expectations and needs to each other throughout the rehearsal process. It promotes partnerships based on mutual respect, making it easier to accomplish the task at hand.
+- **Think Abstractly to Solve Problems:** Music can feel like a magical wash of sound to the listener, but it's been my job as a musician to identify abstract goals (e.g. "How can I make this bar sound more intense?" or "How can this note sound more beautiful?") and devise specific, actionable plans for achieving them.
+- **Tackle New Challenges Strategically:** With over 400 years of repertoire, even the most seasoned classical musician will encounter music with unfamiliar technical and musical challenges. I've developed a reliable routine for examining new challenges and giving them proper context so I can practice and perform whatever music is required of me onstage.
