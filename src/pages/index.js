@@ -76,31 +76,6 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
           </FadeInSection>
-          <FadeInSection>
-            <div className="content-card">
-              <h2 className="align-center">Education</h2>
-              <div className="flex-columns">
-                {EDUCATION_DATA.map(
-                  ({
-                    school,
-                    degree,
-                    major,
-                    graduationMonth,
-                    graduationYear,
-                  }) => (
-                    <EducationCard
-                      key={graduationYear}
-                      school={school}
-                      degree={degree}
-                      major={major}
-                      graduationMonth={graduationMonth}
-                      graduationYear={graduationYear}
-                    />
-                  )
-                )}
-              </div>
-            </div>
-          </FadeInSection>
           <h1>Projects</h1>
           {projects.map(({ frontmatter, html }, i) => {
             const { githubRepo, postmanDocs, siteLink } = frontmatter;
