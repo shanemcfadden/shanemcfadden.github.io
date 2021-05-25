@@ -9,7 +9,7 @@ const ProjectCard = ({ githubRepo, postmanDocs, siteLink, content }) => {
         <div className="button-row">
           {siteLink && (
             <a className="button" href={siteLink}>
-              Project site
+              Project Site
             </a>
           )}
           {postmanDocs && (
