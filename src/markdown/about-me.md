@@ -1,9 +1,9 @@
 # Profile
 
 A full-stack developer passionate about making life easier with the power of technology.
-I began my career as a pianist and vocal coach, refining hundreds of hours of music from its first readthrough to its final performance.
+I began my career as a pianist and vocal coach, refining hundreds of hours of music from its first read-through to its final performance.
 During the COVID-19 shutdown, my interests shifted, and I used the extra time at home as an opportunity to teach myself to code.
-Today I use my growing technical skills and established musicianship skills in tandem to build new software from scratch.
+Today, I use my growing technical skills and established musicianship skills in tandem to build new software from scratch.
 
 ## As a Developer, I Can...
 
@@ -13,6 +13,6 @@ Today I use my growing technical skills and established musicianship skills in t
 
 ## As a Musician, I Can...
 
-- **Communicate Effectively with Teammates:** Whether I'm collaborating with a single violinist for a recital or directing thirty vocalists for an opera, I've found that effective communication throughout the rehearsal process is vital for producing quality performances. It promotes partnerships based on mutual respect, reduces misunderstanding, and makes it easier to accomplish the task at hand.
 - **Think Abstractly to Solve Problems:** Music can feel like a magical wash of sound to the listener. However, in order to make any measurable improvements, it's been my job as a musician to identify abstract goals (e.g. "How can I make this melody sound more intense?" or "How can this note sound more beautiful?") and devise specific, actionable plans for achieving them.
-- **Tackle New Challenges Strategically:** With over 400 years of repertoire, even the most seasoned classical musician will encounter music with unfamiliar technical and musical challenges. I've developed a reliable routine for examining new challenges and giving them proper context so I can practice and perform whatever music is required of me onstage.
+- **Communicate Effectively with Teammates:** Whether I'm collaborating with a single violinist for a recital or directing thirty vocalists for an opera, I've found that effective communication throughout the rehearsal process is vital for producing quality performances. It promotes partnerships based on mutual respect, reduces misunderstanding, and makes it easier to accomplish the task at hand.
+- **Tackle New Challenges Strategically:** With over 400 years of repertoire, even the most seasoned classical musician will encounter music with unfamiliar technical and musical challenges. I've developed a reliable routine for examining new challenges and giving them proper context so I can practice and perform whatever music is required of me.
