@@ -27,21 +27,21 @@ const IndexPage = ({ data }) => {
           <html lang="en" />
           <title>Shane McFadden - Software Developer</title>
           <meta name="description" content={PAGE_DESCRIPTION} />
-          <link rel="canonical" href="https://shanemcfadden.github.io" />
+          <link rel="canonical" href="https://shanemcfadden.dev" />
           <meta
             property="og:title"
             content="Shane McFadden - Software Developer"
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://shanemcfadden.github.io/" />
+          <meta property="og:url" content="https://shanemcfadden.dev/" />
           <meta property="og:description" content={PAGE_DESCRIPTION} />
           <meta
             property="og:image"
-            content="https://shanemcfadden.github.io/og-image.jpg"
+            content="https://shanemcfadden.dev/og-image.jpg"
           />
           <meta
             property="twitter:image"
-            content="https://shanemcfadden.github.io/twitter-image.jpg"
+            content="https://shanemcfadden.dev/twitter-image.jpg"
           />
           <script type="application/ld+json">
             {`{
@@ -49,7 +49,7 @@ const IndexPage = ({ data }) => {
               "@type": "Person",
               "name": "Shane McFadden",
               "jobTitle": "Software Developer",
-              "url": "https://shanemcfadden.github.io"
+              "url": "https://shanemcfadden.dev"
             }`}
           </script>
         </Helmet>

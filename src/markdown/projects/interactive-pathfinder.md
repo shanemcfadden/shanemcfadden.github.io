@@ -1,7 +1,7 @@
 ---
 githubRepo: "https://github.com/shanemcfadden/interactive-pathfinder"
 orderIndex: "0"
-siteLink: "https://shanemcfadden.github.io/interactive-pathfinder/"
+siteLink: "https://shanemcfadden.dev/interactive-pathfinder/"
 ---
 
 ## Interactive Pathfinder
@@ -17,4 +17,4 @@ A single page web application that allows users to select start and end points f
 
 **Note: This application is designed for desktop use. It is not yet optimized for touchscreens or small viewports.**
 
-[![Interactive pathfinder screencap](../../images/interactivePathfinderScreencap.gif)](https://shanemcfadden.github.io/interactive-pathfinder/)
+[![Interactive pathfinder screencap](../../images/interactivePathfinderScreencap.gif)](https://shanemcfadden.dev/interactive-pathfinder/)

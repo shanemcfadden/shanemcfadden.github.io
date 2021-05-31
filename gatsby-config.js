@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "github-homepage",
-    siteUrl: "https://shanemcfadden.github.io",
+    siteUrl: "https://shanemcfadden.dev",
   },
   plugins: [
     "gatsby-plugin-sass",
