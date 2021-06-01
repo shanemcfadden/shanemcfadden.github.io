@@ -73,7 +73,9 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
           </FadeInSection>
-          <h1>Projects</h1>
+          <FadeInSection>
+            <h1>Projects</h1>
+          </FadeInSection>
           {projects.map(({ frontmatter, html }, i) => {
             const { githubRepo, postmanDocs, siteLink } = frontmatter;
             return (
