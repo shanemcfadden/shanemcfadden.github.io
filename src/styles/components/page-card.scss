@@ -1,7 +1,5 @@
 .page-card__display {
   position: relative;
-  //   overflow: hidden;
-  //   height: 600px;
 }
 
 .page-card {
@@ -12,18 +10,18 @@
   transition: opacity 1s ease-out, left 1s ease-out, visibility 1s ease-out;
 }
 
-.page-card--left {
+.page-card--left,
+.page-card--right {
   opacity: 0;
   visibility: hidden;
-  //   overflow: hidden;
-  //   height: 100vh;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.page-card--left {
   left: -100%;
 }
 
 .page-card--right {
-  opacity: 0;
-  visibility: hidden;
-  //   overflow: hidden;
-  //   height: 100vh;
   left: 100%;
 }
