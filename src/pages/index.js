@@ -2,18 +2,14 @@ import * as React from "react";
 import "normalize.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/index.scss";
-import ProjectCard from "../components/ProjectCard";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
-import FadeInSection from "../components/FadeInSection";
 import SOCIAL_LINKS from "../content/SocialLinks";
-import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SocialLinks from "../components/SocialLinks";
 import PAGE_DESCRIPTION from "../content/PageDescription";
-import PageCardDisplay from "../components/PageCardDisplay";
+import PageCardLayout from "../components/PageCardLayout";
 
 const IndexPage = ({ data }) => {
-  const [selectedPageIndex, setSelectedPageIndex] = React.useState(0);
   const markdownNodes = data.allMarkdownRemark.nodes;
   const aboutMeContent = markdownNodes.find(
     (node) => !!node.fileAbsolutePath.match(/.*\/about-me\.md$/)
@@ -64,56 +60,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
         <div className="content-container">
-          <div>
-            <div
-              onClick={(e) => {
-                e.preventDefault();
-                setSelectedPageIndex(0);
-              }}
-            >
-              Projects
-            </div>
-            <div
-              onClick={(e) => {
-                e.preventDefault();
-                setSelectedPageIndex(1);
-              }}
-            >
-              About Me
-            </div>
-          </div>
-          <PageCardDisplay selectedIndex={selectedPageIndex}>
-            <div>
-              <FadeInSection>
-                <h1>Projects</h1>
-              </FadeInSection>
-              {projects.map(({ frontmatter, html }, i) => {
-                const { githubRepo, postmanDocs, siteLink } = frontmatter;
-                return (
-                  <ProjectCard
-                    githubRepo={githubRepo}
-                    siteLink={siteLink}
-                    postmanDocs={postmanDocs}
-                    content={html}
-                    key={i}
-                  />
-                );
-              })}
-            </div>
-            <div>
-              <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
-              <FadeInSection>
-                <div className="content-card flex-grow">
-                  <h2 className="align-center">Technical Skills</h2>
-                  <div className="grid grid--auto-fit-8rem-columns">
-                    {TECHNICAL_SKILLS.map((skill, i) => (
-                      <div key={i}>{skill}</div>
-                    ))}
-                  </div>
-                </div>
-              </FadeInSection>
-            </div>
-          </PageCardDisplay>
+          <PageCardLayout aboutMeContent={aboutMeContent} projects={projects} />
         </div>
       </main>
       <footer>
