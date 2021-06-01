@@ -84,19 +84,6 @@ const IndexPage = ({ data }) => {
           </div>
           <PageCardDisplay selectedIndex={selectedPageIndex}>
             <div>
-              <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
-              <FadeInSection>
-                <div className="content-card flex-grow">
-                  <h2 className="align-center">Technical Skills</h2>
-                  <div className="grid grid--auto-fit-8rem-columns">
-                    {TECHNICAL_SKILLS.map((skill, i) => (
-                      <div key={i}>{skill}</div>
-                    ))}
-                  </div>
-                </div>
-              </FadeInSection>
-            </div>
-            <div>
               <FadeInSection>
                 <h1>Projects</h1>
               </FadeInSection>
@@ -112,6 +99,19 @@ const IndexPage = ({ data }) => {
                   />
                 );
               })}
+            </div>
+            <div>
+              <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
+              <FadeInSection>
+                <div className="content-card flex-grow">
+                  <h2 className="align-center">Technical Skills</h2>
+                  <div className="grid grid--auto-fit-8rem-columns">
+                    {TECHNICAL_SKILLS.map((skill, i) => (
+                      <div key={i}>{skill}</div>
+                    ))}
+                  </div>
+                </div>
+              </FadeInSection>
             </div>
           </PageCardDisplay>
         </div>
