@@ -1,15 +1,12 @@
-# Profile
+# About Me
 
-A full-stack developer passionate about making life easier with the power of technology.
-I began my career as a pianist and vocal coach, refining hundreds of hours of music from its first read-through to its final performance.
-During the COVID-19 shutdown, my interests shifted, and I used the extra time at home as an opportunity to teach myself to code.
-Today, I use my growing technical skills and established musicianship skills in tandem to build new software from scratch.
+I am a self-motivated learner harnessing my passion for solving complex problems to transition from hobby coding as a full-time musician to building software professionally with an experienced team.
 
 ## As a Developer, I Can...
 
 - **Implement Projects Independently:** While building projects in online courses using step-by-step instructions, it felt like the instructor was doing the bulk of the thinking for me. I made it a priority to build each of the projects below without a guide using a combination of familiar and unfamiliar tools. This allowed me to encounter more challenges and hone my ability to solve them without a safety net.
 - **Build Front-end and Back-end Tools:** From reactive front-end applications like [Interactive Pathfinder](https://github.com/shanemcfadden/interactive-pathfinder) to robust back-end servers like [Budget API](https://github.com/shanemcfadden/budget-api), I have experience designing and building projects for various layers of large-scale applications.
-- **Learn New Software Stacks:** The bulk of my growth as a developer thus far has been self directed. Therefore, I'm confident that I can continue learning new tools independently or as part of an experienced team.
+- **Learn New Software Stacks:** The bulk of my growth as a developer thus far has been self directed. Therefore, I'm confident that I can continue learning new tools independently or as part of team.
 
 ## As a Musician, I Can...
 
