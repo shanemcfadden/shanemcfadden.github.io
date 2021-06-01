@@ -19,9 +19,9 @@
 }
 
 .page-card--left {
-  left: -100%;
+  left: calc(-100% - 3rem);
 }
 
 .page-card--right {
-  left: 100%;
+  left: calc(100% + 3rem);
 }
