@@ -9,8 +9,8 @@
   width: 100%;
   transition: opacity 1s ease-out, left 1s ease-out, visibility 1s ease-out;
 
-  main > :first-child,
-  main > :first-child > :first-child {
+  > :first-child,
+  > :first-child > :first-child {
     margin-top: 0;
   }
 }

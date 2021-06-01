@@ -2,9 +2,9 @@ import React from "react";
 
 const PageCard = ({ position, children }) => {
   return (
-    <div className={`page-card${position ? ` page-card--${position}` : ""}`}>
-      <main>{children}</main>
-    </div>
+    <main className={`page-card${position ? ` page-card--${position}` : ""}`}>
+      {children}
+    </main>
   );
 };
 
