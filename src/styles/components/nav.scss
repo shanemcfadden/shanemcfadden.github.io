@@ -1,11 +1,16 @@
 nav {
   * {
     cursor: pointer;
-    color: black;
+    color: #aaa;
+    transition: color $default-transition-style;
+  }
+
+  .nav__button--selected,
+  :hover {
+    color: $medium-mc;
   }
 
   .nav__button--selected {
-    color: $medium-mc;
     cursor: default;
   }
 }
