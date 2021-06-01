@@ -6,7 +6,6 @@ import ProjectCard from "../components/ProjectCard";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import FadeInSection from "../components/FadeInSection";
-import SkillRating from "../components/SkillRating";
 import SOCIAL_LINKS from "../content/SocialLinks";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SocialLinks from "../components/SocialLinks";
@@ -67,9 +66,9 @@ const IndexPage = ({ data }) => {
           <FadeInSection>
             <div className="content-card flex-grow">
               <h2 className="align-center">Technical Skills</h2>
-              <div className="grid grid--auto-fit-12rem-columns">
-                {TECHNICAL_SKILLS.map(({ skill, rating }, i) => (
-                  <SkillRating skill={skill} rating={rating} key={i} />
+              <div className="grid grid--auto-fit-8rem-columns">
+                {TECHNICAL_SKILLS.map((skill, i) => (
+                  <div key={i}>{skill}</div>
                 ))}
               </div>
             </div>
