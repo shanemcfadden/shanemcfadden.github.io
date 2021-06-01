@@ -9,7 +9,10 @@ const PageCardLayout = ({ aboutMeContent, projects }) => {
   const [selectedPageIndex, setSelectedPageIndex] = React.useState(0);
   return (
     <div>
-      <PageCardNavigation setSelectedPageIndex={setSelectedPageIndex} />
+      <PageCardNavigation
+        selectedPageIndex={selectedPageIndex}
+        setSelectedPageIndex={setSelectedPageIndex}
+      />
       <PageCardDisplay selectedIndex={selectedPageIndex}>
         <div>
           <FadeInSection>

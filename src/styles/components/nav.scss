@@ -1,0 +1,10 @@
+nav {
+  * {
+    cursor: pointer;
+    color: black;
+  }
+
+  .nav__button--selected {
+    color: $medium-mc;
+  }
+}

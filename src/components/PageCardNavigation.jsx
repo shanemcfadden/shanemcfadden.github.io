@@ -1,21 +1,22 @@
 import React from "react";
 
-const PageCardNavigation = ({ setSelectedPageIndex }) => {
+const PageCardNavigation = ({ selectedPageIndex, setSelectedPageIndex }) => {
   const PAGES = ["Projects", "About Me"];
   return (
-    <div>
+    <nav className="flex-columns flex--justify-content-space-between">
       {PAGES.map((page, i) => (
-        <div
+        <h1
           onClick={(e) => {
             e.preventDefault();
             setSelectedPageIndex(i);
           }}
+          className={i === selectedPageIndex ? "nav__button--selected" : ""}
           key={i}
         >
           {page}
-        </div>
+        </h1>
       ))}
-    </div>
+    </nav>
   );
 };
 
