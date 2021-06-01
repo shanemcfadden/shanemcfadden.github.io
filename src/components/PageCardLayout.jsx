@@ -14,7 +14,7 @@ const PageCardLayout = ({ aboutMeContent, projects }) => {
         setSelectedPageIndex={setSelectedPageIndex}
       />
       <PageCardDisplay selectedIndex={selectedPageIndex}>
-        <div>
+        <>
           {projects.map(({ frontmatter, html }, i) => {
             const { githubRepo, postmanDocs, siteLink } = frontmatter;
             return (
@@ -27,8 +27,8 @@ const PageCardLayout = ({ aboutMeContent, projects }) => {
               />
             );
           })}
-        </div>
-        <div>
+        </>
+        <>
           <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
           <FadeInSection>
             <div className="content-card flex-grow">
@@ -40,7 +40,7 @@ const PageCardLayout = ({ aboutMeContent, projects }) => {
               </div>
             </div>
           </FadeInSection>
-        </div>
+        </>
       </PageCardDisplay>
     </div>
   );
