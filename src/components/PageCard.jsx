@@ -1,7 +1,11 @@
 import React from "react";
 
-const PageCard = ({ children }) => {
-  return <div className="page-card">{children}</div>;
+const PageCard = ({ position, children }) => {
+  return (
+    <div className={`page-card${position ? ` page-card--${position}` : ""}`}>
+      {children}
+    </div>
+  );
 };
 
 export default PageCard;

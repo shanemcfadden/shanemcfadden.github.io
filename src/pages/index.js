@@ -13,6 +13,7 @@ import PAGE_DESCRIPTION from "../content/PageDescription";
 import PageCardDisplay from "../components/PageCardDisplay";
 
 const IndexPage = ({ data }) => {
+  const [selectedPageIndex, setSelectedPageIndex] = React.useState(0);
   const markdownNodes = data.allMarkdownRemark.nodes;
   const aboutMeContent = markdownNodes.find(
     (node) => !!node.fileAbsolutePath.match(/.*\/about-me\.md$/)
@@ -63,7 +64,25 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
         <div className="content-container">
-          <PageCardDisplay>
+          <div>
+            <div
+              onClick={(e) => {
+                e.preventDefault();
+                setSelectedPageIndex(0);
+              }}
+            >
+              About Me
+            </div>
+            <div
+              onClick={(e) => {
+                e.preventDefault();
+                setSelectedPageIndex(1);
+              }}
+            >
+              Projects
+            </div>
+          </div>
+          <PageCardDisplay selectedIndex={selectedPageIndex}>
             <div>
               <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
               <FadeInSection>
