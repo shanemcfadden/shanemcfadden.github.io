@@ -3,29 +3,13 @@ import ProjectCard from "../components/ProjectCard";
 import FadeInSection from "../components/FadeInSection";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import PageCardDisplay from "../components/PageCardDisplay";
+import PageCardNavigation from "./PageCardNavigation";
 
 const PageCardLayout = ({ aboutMeContent, projects }) => {
   const [selectedPageIndex, setSelectedPageIndex] = React.useState(0);
   return (
     <div>
-      <div>
-        <div
-          onClick={(e) => {
-            e.preventDefault();
-            setSelectedPageIndex(0);
-          }}
-        >
-          Projects
-        </div>
-        <div
-          onClick={(e) => {
-            e.preventDefault();
-            setSelectedPageIndex(1);
-          }}
-        >
-          About Me
-        </div>
-      </div>
+      <PageCardNavigation setSelectedPageIndex={setSelectedPageIndex} />
       <PageCardDisplay selectedIndex={selectedPageIndex}>
         <div>
           <FadeInSection>
