@@ -1,0 +1,18 @@
+.page-card__display {
+  position: relative;
+}
+
+.page-card {
+  position: absolute;
+  top: 0;
+}
+
+.page-card--left {
+  //   transform: translateX(-100%);
+  left: -100%;
+}
+
+.page-card--right {
+  //   transform: translateX(100%);
+  left: 100%;
+}

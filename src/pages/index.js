@@ -10,6 +10,7 @@ import SOCIAL_LINKS from "../content/SocialLinks";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SocialLinks from "../components/SocialLinks";
 import PAGE_DESCRIPTION from "../content/PageDescription";
+import PageCardDisplay from "../components/PageCardDisplay";
 
 const IndexPage = ({ data }) => {
   const markdownNodes = data.allMarkdownRemark.nodes;
@@ -62,37 +63,45 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
         <div className="content-container">
-          <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
-          <FadeInSection>
-            <div className="content-card flex-grow">
-              <h2 className="align-center">Technical Skills</h2>
-              <div className="grid grid--auto-fit-8rem-columns">
-                {TECHNICAL_SKILLS.map((skill, i) => (
-                  <div key={i}>{skill}</div>
-                ))}
-              </div>
+          <PageCardDisplay>
+            <div>
+              <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
+              <FadeInSection>
+                <div className="content-card flex-grow">
+                  <h2 className="align-center">Technical Skills</h2>
+                  <div className="grid grid--auto-fit-8rem-columns">
+                    {TECHNICAL_SKILLS.map((skill, i) => (
+                      <div key={i}>{skill}</div>
+                    ))}
+                  </div>
+                </div>
+              </FadeInSection>
             </div>
-          </FadeInSection>
-          <FadeInSection>
-            <h1>Projects</h1>
-          </FadeInSection>
-          {projects.map(({ frontmatter, html }, i) => {
-            const { githubRepo, postmanDocs, siteLink } = frontmatter;
-            return (
-              <ProjectCard
-                githubRepo={githubRepo}
-                siteLink={siteLink}
-                postmanDocs={postmanDocs}
-                content={html}
-                key={i}
-              />
-            );
-          })}
+            <div>
+              <FadeInSection>
+                <h1>Projects</h1>
+              </FadeInSection>
+              {projects.map(({ frontmatter, html }, i) => {
+                const { githubRepo, postmanDocs, siteLink } = frontmatter;
+                return (
+                  <ProjectCard
+                    githubRepo={githubRepo}
+                    siteLink={siteLink}
+                    postmanDocs={postmanDocs}
+                    content={html}
+                    key={i}
+                  />
+                );
+              })}
+            </div>
+          </PageCardDisplay>
         </div>
       </main>
-      <footer>
-        <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
-      </footer>
+      {
+        // <footer>
+        //   <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
+        // </footer>
+      }
     </>
   );
 };
