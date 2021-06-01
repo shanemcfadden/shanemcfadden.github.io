@@ -116,11 +116,9 @@ const IndexPage = ({ data }) => {
           </PageCardDisplay>
         </div>
       </main>
-      {
-        // <footer>
-        //   <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
-        // </footer>
-      }
+      <footer>
+        <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
+      </footer>
     </>
   );
 };
