@@ -71,7 +71,7 @@ const IndexPage = ({ data }) => {
                 setSelectedPageIndex(0);
               }}
             >
-              About Me
+              Projects
             </div>
             <div
               onClick={(e) => {
@@ -79,7 +79,7 @@ const IndexPage = ({ data }) => {
                 setSelectedPageIndex(1);
               }}
             >
-              Projects
+              About Me
             </div>
           </div>
           <PageCardDisplay selectedIndex={selectedPageIndex}>
