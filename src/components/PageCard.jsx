@@ -12,7 +12,7 @@ const PageCard = ({ position, setPageCardDisplayHeight, children }) => {
       ref={cardRef}
       className={`page-card${position ? ` page-card--${position}` : ""}`}
     >
-      {children}
+      <main>{children}</main>
     </div>
   );
 };

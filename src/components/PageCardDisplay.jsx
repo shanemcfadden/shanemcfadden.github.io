@@ -1,5 +1,8 @@
 import React from "react";
 import PageCard from "./PageCard";
+import SocialLinks from "./SocialLinks";
+import SOCIAL_LINKS from "../content/SocialLinks";
+import FadeInSection from "./FadeInSection";
 
 const PageCardDisplay = ({ selectedIndex, children }) => {
   const [height, setHeight] = React.useState(0);
@@ -17,11 +20,16 @@ const PageCardDisplay = ({ selectedIndex, children }) => {
     >
       {React.Children.toArray(children).map((card, i) => (
         <PageCard
-          key={i}
           setPageCardDisplayHeight={setHeight}
+          key={i}
           position={getPosition(i)}
         >
           {card}
+          <FadeInSection>
+            <footer>
+              <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
+            </footer>
+          </FadeInSection>
         </PageCard>
       ))}
     </div>
