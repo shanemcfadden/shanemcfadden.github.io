@@ -5,12 +5,11 @@ import "../styles/index.scss";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import ProjectCard from "../components/ProjectCard";
-import FadeInSection from "../components/FadeInSection";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SOCIAL_LINKS from "../content/SocialLinks";
 import SocialLinks from "../components/SocialLinks";
 import PAGE_DESCRIPTION from "../content/PageDescription";
-import PageCardLayout from "../components/PageCardLayout";
+import PageCardLayout from "../components/PageCardLayout/PageCardLayout";
 
 const IndexPage = ({ data }) => {
   const markdownNodes = data.allMarkdownRemark.nodes;

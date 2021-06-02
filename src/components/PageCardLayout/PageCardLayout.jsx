@@ -1,5 +1,5 @@
 import React from "react";
-import PageCardDisplay from "../components/PageCardDisplay";
+import PageCardDisplay from "./PageCardDisplay";
 import PageCardNavigation from "./PageCardNavigation";
 
 const PageCardLayout = ({ children }) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import PageCard from "./PageCard";
-import SocialLinks from "./SocialLinks";
-import SOCIAL_LINKS from "../content/SocialLinks";
+import SocialLinks from "../SocialLinks";
+import SOCIAL_LINKS from "../../content/SocialLinks";
 
 const PageCardDisplay = ({ selectedIndex, children }) => {
   const getPosition = (i) => {
