@@ -15,11 +15,9 @@ const PageCardDisplay = ({ selectedIndex, children }) => {
       {React.Children.toArray(children).map((card, i) => (
         <PageCard key={i} position={getPosition(i)}>
           {card}
-          <FadeInSection>
-            <footer>
-              <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
-            </footer>
-          </FadeInSection>
+          <footer>
+            <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
+          </footer>
         </PageCard>
       ))}
     </div>
