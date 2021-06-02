@@ -92,11 +92,16 @@ const IndexPage = ({ data }) => {
           </>
           <div>
             <div className="button-row button-row--align-right">
-              <a className="button" href={resumePDF} target="_blank">
+              <a
+                className="button"
+                href={resumePDF}
+                target="_blank"
+                rel="noreferrer"
+              >
                 View PDF
               </a>
             </div>
-            <a href={resumePDF} target="_blank">
+            <a href={resumePDF} target="_blank" rel="noreferrer">
               <StaticImage
                 src="../images/resume.jpg"
                 alt="Shane McFadden Resume"
