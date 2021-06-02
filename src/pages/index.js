@@ -10,6 +10,7 @@ import SOCIAL_LINKS from "../content/SocialLinks";
 import SocialLinks from "../components/SocialLinks";
 import PAGE_DESCRIPTION from "../content/PageDescription";
 import PageCardLayout from "../components/PageCardLayout/PageCardLayout";
+import resumePDF from "../../static/resume.pdf";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = ({ data }) => {
@@ -90,14 +91,21 @@ const IndexPage = ({ data }) => {
             <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
           </>
           <div>
-            <StaticImage
-              src="../images/resume.jpg"
-              alt="Shane McFadden Resume"
-              style={{
-                boxShadow: "1px 1px 6px #999",
-                display: "block",
-              }}
-            />
+            <div className="button-row button-row--align-right">
+              <a className="button" href={resumePDF} target="_blank">
+                View PDF
+              </a>
+            </div>
+            <a href={resumePDF} target="_blank">
+              <StaticImage
+                src="../images/resume.jpg"
+                alt="Shane McFadden Resume"
+                style={{
+                  boxShadow: "1px 1px 6px #999",
+                  display: "block",
+                }}
+              />
+            </a>
           </div>
         </PageCardLayout>
       </div>

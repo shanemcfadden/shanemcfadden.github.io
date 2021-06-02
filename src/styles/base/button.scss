@@ -51,5 +51,17 @@
     :first-child {
       margin-left: 0;
     }
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.button-row--align-right {
+  @media only screen and (min-width: $desktop-breakpoint) {
+    :first-child {
+      margin-left: auto;
+    }
   }
 }
