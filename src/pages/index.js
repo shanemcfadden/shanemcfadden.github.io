@@ -72,6 +72,7 @@ const IndexPage = ({ data }) => {
                   postmanDocs={postmanDocs}
                   content={html}
                   key={i}
+                  fadeIn={i}
                 />
               );
             })}
