@@ -8,7 +8,7 @@ const PageCardNavigation = ({ selectedPageIndex, setSelectedPageIndex }) => {
         <h1
           onClick={(e) => {
             e.preventDefault();
-            if (selectedPageIndex != i) setSelectedPageIndex(i);
+            if (selectedPageIndex !== i) setSelectedPageIndex(i);
           }}
           className={i === selectedPageIndex ? "nav__button--selected" : ""}
           key={i}
