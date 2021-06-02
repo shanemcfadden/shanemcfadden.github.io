@@ -2,7 +2,6 @@ import React from "react";
 import PageCard from "./PageCard";
 import SocialLinks from "./SocialLinks";
 import SOCIAL_LINKS from "../content/SocialLinks";
-import FadeInSection from "./FadeInSection";
 
 const PageCardDisplay = ({ selectedIndex, children }) => {
   const getPosition = (i) => {
