@@ -1,3 +1,5 @@
+## Profile
+
 I am a self-motivated learner harnessing my passion for solving complex problems to transition from hobby coding as a full-time musician to building software professionally with an experienced team.
 
 ## As a Developer, I Can...
