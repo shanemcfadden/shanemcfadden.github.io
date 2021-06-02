@@ -10,6 +10,7 @@ import SOCIAL_LINKS from "../content/SocialLinks";
 import SocialLinks from "../components/SocialLinks";
 import PAGE_DESCRIPTION from "../content/PageDescription";
 import PageCardLayout from "../components/PageCardLayout/PageCardLayout";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = ({ data }) => {
   const markdownNodes = data.allMarkdownRemark.nodes;
@@ -88,6 +89,16 @@ const IndexPage = ({ data }) => {
             </div>
             <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
           </>
+          <div>
+            <StaticImage
+              src="../images/resume.jpg"
+              alt="Shane McFadden Resume"
+              style={{
+                boxShadow: "1px 1px 6px #999",
+                display: "block",
+              }}
+            />
+          </div>
         </PageCardLayout>
       </div>
     </>

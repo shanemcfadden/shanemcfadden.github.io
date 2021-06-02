@@ -1,7 +1,7 @@
 import React from "react";
 
 const PageCardNavigation = ({ selectedPageIndex, setSelectedPageIndex }) => {
-  const PAGES = ["Projects", "About Me"];
+  const PAGES = ["Projects", "About Me", "Resume"];
   return (
     <nav className="flex-columns flex--justify-content-space-between">
       {PAGES.map((page, i) => (
