@@ -1,17 +1,19 @@
 const TECHNICAL_SKILLS = [
-  "JavaScript",
+  "JavaScript/ES6",
   "TypeScript",
   "React",
-  "React-Redux",
-  "HTML",
-  "CSS",
   "SCSS/Sass",
+  "Gatsby",
   "NodeJS",
   "Express",
+  "Mocha",
   "MySQL",
-  "MongoDB",
-  "Firebase",
+  "React-Redux",
+  "Webpack",
   "GraphQL",
+  "Git",
+  "MongoDB",
+  "Jest",
 ];
 
 export default TECHNICAL_SKILLS;
