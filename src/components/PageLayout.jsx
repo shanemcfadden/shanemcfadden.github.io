@@ -1,7 +1,7 @@
 import React from "react";
 import SocialLinks from "./SocialLinks";
 import SEO from "./SEO";
-import PageCardNavigation from "./PageCardLayout/PageCardNavigation";
+import Navigation from "./Navigation";
 import SOCIAL_LINKS from "../content/SocialLinks";
 
 const PageLayout = ({ banner = false, children }) => {
@@ -22,7 +22,7 @@ const PageLayout = ({ banner = false, children }) => {
         </div>
       )}
       <div className="content-container">
-        <PageCardNavigation />
+        <Navigation />
         {children}
         <footer>
           <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />

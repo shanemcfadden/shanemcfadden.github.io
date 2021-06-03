@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-const PageCardNavigation = () => {
+const Navigation = () => {
   return (
     <nav className="flex-columns flex--justify-content-space-between">
       <Link
@@ -29,4 +29,4 @@ const PageCardNavigation = () => {
   );
 };
 
-export default PageCardNavigation;
+export default Navigation;
