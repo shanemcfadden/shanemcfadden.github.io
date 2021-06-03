@@ -10,8 +10,8 @@ const Navigation = () => {
 
   const links = [
     { to: "/#navigation", text: "Projects" },
-    { to: "/about", text: "About Me" },
-    { to: "/resume", text: "Resume" },
+    { to: "/about#navigation", text: "About Me" },
+    { to: "/resume#navigation", text: "Resume" },
   ];
   return (
     <nav

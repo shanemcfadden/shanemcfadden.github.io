@@ -4,7 +4,7 @@ import SEO from "./SEO";
 import Navigation from "./Navigation";
 import SOCIAL_LINKS from "../content/SocialLinks";
 
-const PageLayout = ({ banner = false, children }) => {
+const PageLayout = ({ banner = true, children }) => {
   return (
     <div>
       {/* eslint-disable react/jsx-pascal-case */}

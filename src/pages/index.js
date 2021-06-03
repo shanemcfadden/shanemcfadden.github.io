@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
     .filter((node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/))
     .sort((a, b) => a.frontmatter.orderIndex - b.frontmatter.orderIndex);
   return (
-    <PageLayout banner={true}>
+    <PageLayout>
       <ProjectCards projectNodes={projects} />
     </PageLayout>
   );
