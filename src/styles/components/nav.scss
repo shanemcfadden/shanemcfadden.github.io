@@ -1,7 +1,14 @@
 nav {
   * {
+    border: 0;
+    background-color: transparent;
     cursor: pointer;
     color: #aaa;
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0.67em auto;
+    padding: 0;
     transition: color $default-transition-style;
   }
 

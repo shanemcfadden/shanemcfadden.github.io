@@ -5,16 +5,19 @@ const PageCardNavigation = ({ selectedPageIndex, setSelectedPageIndex }) => {
   return (
     <nav className="flex-columns flex--justify-content-space-between">
       {PAGES.map((page, i) => (
-        <h1
+        <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             if (selectedPageIndex !== i) setSelectedPageIndex(i);
           }}
-          className={i === selectedPageIndex ? "nav__button--selected" : ""}
+          className={`center-in-mobile${
+            i === selectedPageIndex ? " nav__button--selected" : ""
+          }`}
           key={i}
         >
           {page}
-        </h1>
+        </button>
       ))}
     </nav>
   );
