@@ -1,0 +1,2 @@
+(self.webpackChunkgithub_homepage=self.webpackChunkgithub_homepage||[]).push([[883],{9616:function(e,t,a){"use strict";a.r(t);var u=a(7294),n=a(9499);t.default=function(e){var t=e.data.site.siteMetadata.siteUrl;return(0,u.useEffect)((function(){(0,n.navigate)(t)}),[t]),null}}}]);
+//# sourceMappingURL=component---src-pages-404-js-4234236bee637ad14909.js.map
