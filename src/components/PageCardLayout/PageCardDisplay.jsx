@@ -3,7 +3,7 @@ import PageCard from "./PageCard";
 import SocialLinks from "../SocialLinks";
 import SOCIAL_LINKS from "../../content/SocialLinks";
 
-const PageCardDisplay = ({ selectedIndex, children }) => {
+const PageCardDisplay = ({ selectedIndex, contents }) => {
   const getPosition = (i) => {
     if (i === selectedIndex) return null;
     if (i < selectedIndex) return "left";
@@ -11,9 +11,9 @@ const PageCardDisplay = ({ selectedIndex, children }) => {
   };
   return (
     <div className="page-card__display">
-      {React.Children.toArray(children).map((card, i) => (
+      {contents.map((content, i) => (
         <PageCard key={i} position={getPosition(i)}>
-          {card}
+          {content}
           <footer>
             <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
           </footer>

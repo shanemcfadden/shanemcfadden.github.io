@@ -22,6 +22,51 @@ const IndexPage = ({ data }) => {
   const projects = markdownNodes
     .filter((node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/))
     .sort((a, b) => a.frontmatter.orderIndex - b.frontmatter.orderIndex);
+  const pages = [
+    {
+      title: "Projects",
+      content: <ProjectCards projectNodes={projects} />,
+    },
+    {
+      title: "About Me",
+      content: (
+        <>
+          <GridOfListItemsCard
+            title="Technical Skills"
+            listItems={TECHNICAL_SKILLS}
+          />
+          <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
+        </>
+      ),
+    },
+    {
+      title: "Resume",
+      content: (
+        <div>
+          <div className="button-row button-row--align-right">
+            <a
+              className="button"
+              href={resumePDF}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View PDF
+            </a>
+          </div>
+          <a href={resumePDF} target="_blank" rel="noreferrer">
+            <StaticImage
+              src="../images/resume.jpg"
+              alt="Shane McFadden Resume"
+              style={{
+                boxShadow: "1px 1px 6px #999",
+                display: "block",
+              }}
+            />
+          </a>
+        </div>
+      ),
+    },
+  ];
   return (
     <>
       <Helmet>
@@ -64,38 +109,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="content-container">
-        <PageCardLayout>
-          <ProjectCards projectNodes={projects} />
-          <>
-            <GridOfListItemsCard
-              title="Technical Skills"
-              listItems={TECHNICAL_SKILLS}
-            />
-            <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
-          </>
-          <div>
-            <div className="button-row button-row--align-right">
-              <a
-                className="button"
-                href={resumePDF}
-                target="_blank"
-                rel="noreferrer"
-              >
-                View PDF
-              </a>
-            </div>
-            <a href={resumePDF} target="_blank" rel="noreferrer">
-              <StaticImage
-                src="../images/resume.jpg"
-                alt="Shane McFadden Resume"
-                style={{
-                  boxShadow: "1px 1px 6px #999",
-                  display: "block",
-                }}
-              />
-            </a>
-          </div>
-        </PageCardLayout>
+        <PageCardLayout pages={pages} />
       </div>
     </>
   );

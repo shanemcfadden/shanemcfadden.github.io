@@ -1,10 +1,13 @@
 import React from "react";
 
-const PageCardNavigation = ({ selectedPageIndex, setSelectedPageIndex }) => {
-  const PAGES = ["Projects", "About Me", "Resume"];
+const PageCardNavigation = ({
+  selectedPageIndex,
+  setSelectedPageIndex,
+  titles,
+}) => {
   return (
     <nav className="flex-columns flex--justify-content-space-between">
-      {PAGES.map((page, i) => (
+      {titles.map((title, i) => (
         <button
           type="button"
           onClick={(e) => {
@@ -16,7 +19,7 @@ const PageCardNavigation = ({ selectedPageIndex, setSelectedPageIndex }) => {
           }`}
           key={i}
         >
-          {page}
+          {title}
         </button>
       ))}
     </nav>
