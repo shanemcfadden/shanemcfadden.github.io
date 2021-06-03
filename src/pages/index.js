@@ -8,7 +8,6 @@ import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SOCIAL_LINKS from "../content/SocialLinks";
 import SocialLinks from "../components/SocialLinks";
 import PageCardLayout from "../components/PageCardLayout/PageCardLayout";
-import resumePDF from "../../static/resume.pdf";
 import { StaticImage } from "gatsby-plugin-image";
 import GridOfListItemsCard from "../components/GridOfListItemsCard";
 import SEO from "../components/SEO";
@@ -45,14 +44,14 @@ const IndexPage = ({ data }) => {
           <div className="button-row button-row--align-right">
             <a
               className="button"
-              href={resumePDF}
+              href="/resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
               View PDF
             </a>
           </div>
-          <a href={resumePDF} target="_blank" rel="noreferrer">
+          <a href="/resume.pdf" target="_blank" rel="noreferrer">
             <StaticImage
               src="../images/resume.jpg"
               alt="Shane McFadden Resume"
