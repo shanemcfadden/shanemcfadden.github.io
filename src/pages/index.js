@@ -12,6 +12,7 @@ import PAGE_DESCRIPTION from "../content/PageDescription";
 import PageCardLayout from "../components/PageCardLayout/PageCardLayout";
 import resumePDF from "../../static/resume.pdf";
 import { StaticImage } from "gatsby-plugin-image";
+import GridOfListItemsCard from "../components/GridOfListItemsCard";
 
 const IndexPage = ({ data }) => {
   const markdownNodes = data.allMarkdownRemark.nodes;
@@ -66,14 +67,10 @@ const IndexPage = ({ data }) => {
         <PageCardLayout>
           <ProjectCards projectNodes={projects} />
           <>
-            <div className="content-card flex-grow">
-              <h2 className="align-center">Technical Skills</h2>
-              <div className="grid grid--auto-fit-8rem-columns">
-                {TECHNICAL_SKILLS.map((skill, i) => (
-                  <div key={i}>{skill}</div>
-                ))}
-              </div>
-            </div>
+            <GridOfListItemsCard
+              title="Technical Skills"
+              listItems={TECHNICAL_SKILLS}
+            />
             <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
           </>
           <div>
