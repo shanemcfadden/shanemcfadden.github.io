@@ -26,12 +26,6 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark {
       nodes {
-        frontmatter {
-          githubRepo
-          orderIndex
-          postmanDocs
-          siteLink
-        }
         fileAbsolutePath
         html
       }
