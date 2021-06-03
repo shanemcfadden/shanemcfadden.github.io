@@ -31,7 +31,10 @@ const ProjectCard = ({
     </div>
   );
 
-  if (fadeIn) return <FadeInSection>{contentCard}</FadeInSection>;
+  {
+    // Doesn't work when deployed. Will fix outside of business hours
+    // if (fadeIn) return <FadeInSection>{contentCard}</FadeInSection>;
+  }
   return <div>{contentCard}</div>;
 };
 
