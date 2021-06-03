@@ -1,4 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
+import { useLocation } from "@reach/router";
 import React from "react";
 import Helmet from "react-helmet";
 
@@ -11,15 +12,17 @@ const SEO = () => {
     twitterImage,
     siteUrl,
   } = site.siteMetadata;
+  const { pathname } = useLocation();
+  const url = siteUrl + pathname;
   return (
     <Helmet>
       <html lang="en" />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={siteUrl} />
+      <link rel="canonical" href={url} />
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={siteUrl} />
+      <meta property="og:url" content={url} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="twitter:image" content={twitterImage} />
