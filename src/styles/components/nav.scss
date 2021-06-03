@@ -1,3 +1,10 @@
+nav {
+  margin: 1rem 0;
+  @media screen and (min-width: $desktop-breakpoint) {
+    margin: 2rem 0;
+  }
+}
+
 .nav__button {
   border: 0;
   background-color: transparent;
@@ -5,10 +12,13 @@
   display: block;
   font-size: 2em;
   font-weight: 700;
-  margin: 0.67em auto;
   padding: 0;
+  text-align: center;
   text-decoration: none;
   transition: color $default-transition-style;
+  @media screen and (min-width: $desktop-breakpoint) {
+    text-align: left;
+  }
 
   &:link,
   &:visited {
