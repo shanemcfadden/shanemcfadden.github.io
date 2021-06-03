@@ -21,10 +21,12 @@ const PageLayout = ({ banner = false, children }) => {
           </div>
         </div>
       )}
-
       <div className="content-container">
         <PageCardNavigation />
         {children}
+        <footer>
+          <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
+        </footer>
       </div>
     </div>
   );
