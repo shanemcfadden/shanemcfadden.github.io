@@ -3,15 +3,16 @@ import React from "react";
 
 const Navigation = () => {
   const isActiveWithHash = ({ location, href }) => {
-    return location.pathname === href.split("#")[0]
+    const removeHash = (str) => str.split("#")[0];
+    return location.pathname === removeHash(href)
       ? { className: "nav__button nav__button--selected" }
       : { className: "nav__button" };
   };
 
   const links = [
     { to: "/#navigation", text: "Projects" },
-    { to: "/about#navigation", text: "About Me" },
-    { to: "/resume#navigation", text: "Resume" },
+    { to: "/about/#navigation", text: "About Me" },
+    { to: "/resume/#navigation", text: "Resume" },
   ];
   return (
     <nav
