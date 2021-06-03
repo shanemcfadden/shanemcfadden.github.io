@@ -1,7 +1,4 @@
 import * as React from "react";
-import "normalize.css";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import "../styles/index.scss";
 import { graphql } from "gatsby";
 import ProjectCards from "../components/ProjectCards";
 import PageLayout from "../components/PageLayout";

@@ -1,4 +1,7 @@
 import React from "react";
+import "normalize.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "../styles/index.scss";
 import SocialLinks from "./SocialLinks";
 import SEO from "./SEO";
 import Navigation from "./Navigation";
