@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/index.scss";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCards from "../components/ProjectCards";
 import TECHNICAL_SKILLS from "../content/TechnicalSkills";
 import SOCIAL_LINKS from "../content/SocialLinks";
 import SocialLinks from "../components/SocialLinks";
@@ -64,21 +64,7 @@ const IndexPage = ({ data }) => {
       </div>
       <div className="content-container">
         <PageCardLayout>
-          <>
-            {projects.map(({ frontmatter, html }, i) => {
-              const { githubRepo, postmanDocs, siteLink } = frontmatter;
-              return (
-                <ProjectCard
-                  githubRepo={githubRepo}
-                  siteLink={siteLink}
-                  postmanDocs={postmanDocs}
-                  content={html}
-                  key={i}
-                  fadeIn={i}
-                />
-              );
-            })}
-          </>
+          <ProjectCards projectNodes={projects} />
           <>
             <div className="content-card flex-grow">
               <h2 className="align-center">Technical Skills</h2>
