@@ -67,7 +67,9 @@ const IndexPage = ({ data }) => {
   ];
   return (
     <>
+      {/* eslint-disable react/jsx-pascal-case */}
       <SEO />
+      {/* eslint-enable react/jsx-pascal-case */}
       <div className="banner">
         <div className="content-container">
           <div>Hi, my name is</div>
