@@ -4,16 +4,22 @@ import Helmet from "react-helmet";
 
 const SEO = () => {
   const { site } = useStaticQuery(query);
-  const { description, ogImage, title, twitterImage, url } = site.siteMetadata;
+  const {
+    description,
+    ogImage,
+    title,
+    twitterImage,
+    siteUrl,
+  } = site.siteMetadata;
   return (
     <Helmet>
       <html lang="en" />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={siteUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={siteUrl} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="twitter:image" content={twitterImage} />
@@ -23,7 +29,7 @@ const SEO = () => {
               "@type": "Person",
               "name": "Shane McFadden",
               "jobTitle": "Software Developer",
-              "url": "${url}"
+              "url": "${siteUrl}"
             }`}
       </script>
     </Helmet>
@@ -40,7 +46,7 @@ const query = graphql`
         ogImage
         title
         twitterImage
-        url
+        siteUrl
       }
     }
   }
