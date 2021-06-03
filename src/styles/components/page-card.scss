@@ -21,6 +21,15 @@
   visibility: hidden;
   overflow: hidden;
   height: 100vh;
+
+  // Prevents tabthrough on fade-in-sections of inactive page-cards
+  // Cancels default behavior of hidden anchors and buttons specified in ./fade-in-section.scss
+  .fade-in-section {
+    a,
+    button {
+      visibility: hidden;
+    }
+  }
 }
 
 .page-card--left {
