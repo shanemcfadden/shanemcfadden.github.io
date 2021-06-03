@@ -12,6 +12,7 @@ const Navigation = () => {
       {links.map(({ to, text }) => (
         <Link
           to={to}
+          key={to}
           className="nav__button"
           activeClassName="nav__button--selected"
         >
