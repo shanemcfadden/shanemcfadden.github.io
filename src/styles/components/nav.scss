@@ -1,7 +1,9 @@
 nav {
   margin: 1rem 0;
   @media screen and (min-width: $desktop-breakpoint) {
-    margin: 2rem 0;
+    // Allow margins below nav to collapse
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 
@@ -17,6 +19,8 @@ nav {
   text-decoration: none;
   transition: color $default-transition-style;
   @media screen and (min-width: $desktop-breakpoint) {
+    // Allow margins above nav__buttons to remain visible when navigating
+    margin-top: 2rem;
     text-align: left;
   }
 
