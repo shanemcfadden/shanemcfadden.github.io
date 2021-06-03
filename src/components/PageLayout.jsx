@@ -1,9 +1,15 @@
 import React from "react";
 import SocialLinks from "./SocialLinks";
+import SEO from "./SEO";
+import PageCardNavigation from "./PageCardLayout/PageCardNavigation";
+import SOCIAL_LINKS from "../content/SocialLinks";
 
 const PageLayout = ({ banner = false, children }) => {
   return (
     <div>
+      {/* eslint-disable react/jsx-pascal-case */}
+      <SEO />
+      {/* eslint-enable react/jsx-pascal-case */}
       {banner && (
         <div className="banner">
           <div className="content-container">
@@ -15,10 +21,9 @@ const PageLayout = ({ banner = false, children }) => {
           </div>
         </div>
       )}
+
       <div className="content-container">
-        {
-          // <PageCardLayout pages={pages} />
-        }
+        <PageCardNavigation />
         {children}
       </div>
     </div>

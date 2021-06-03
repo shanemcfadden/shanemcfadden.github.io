@@ -1,23 +1,31 @@
-nav {
-  * {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
+.nav__button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0.67em auto;
+  padding: 0;
+  text-decoration: none;
+  transition: color $default-transition-style;
+
+  &:link,
+  &:visited {
     color: #aaa;
-    display: block;
-    font-size: 2em;
-    font-weight: 700;
-    margin: 0.67em auto;
-    padding: 0;
-    transition: color $default-transition-style;
   }
 
-  .nav__button--selected,
-  :hover {
+  &:hover,
+  &:active {
     color: $medium-mc;
   }
+}
 
-  .nav__button--selected {
-    cursor: default;
+.nav__button--selected {
+  &:visited,
+  &:link,
+  &:hover,
+  &:active {
+    color: $medium-mc;
   }
 }

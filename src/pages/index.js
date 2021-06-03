@@ -10,6 +10,7 @@ import SocialLinks from "../components/SocialLinks";
 import PageCardLayout from "../components/PageCardLayout/PageCardLayout";
 import { StaticImage } from "gatsby-plugin-image";
 import GridOfListItemsCard from "../components/GridOfListItemsCard";
+import PageLayout from "../components/PageLayout";
 import SEO from "../components/SEO";
 
 const IndexPage = ({ data }) => {
@@ -65,26 +66,25 @@ const IndexPage = ({ data }) => {
       ),
     },
   ];
-  return (
-    <>
-      {/* eslint-disable react/jsx-pascal-case */}
-      <SEO />
-      {/* eslint-enable react/jsx-pascal-case */}
-      <div className="banner">
-        <div className="content-container">
-          <div>Hi, my name is</div>
-          <h1 className="align-center">Shane McFadden</h1>
-          <div className="align-center">and I'm a</div>
-          <h2 className="align-right">Software Developer</h2>
-          <SocialLinks socialLinks={SOCIAL_LINKS} />
-        </div>
-      </div>
-      <div className="content-container">
-        <PageCardLayout pages={pages} />
-      </div>
-    </>
-  );
+  return <PageLayout banner={true} />;
 };
+// <>
+//   {/* eslint-disable react/jsx-pascal-case */}
+//   <SEO />
+//   {/* eslint-enable react/jsx-pascal-case */}
+//   <div className="banner">
+//     <div className="content-container">
+//       <div>Hi, my name is</div>
+//       <h1 className="align-center">Shane McFadden</h1>
+//       <div className="align-center">and I'm a</div>
+//       <h2 className="align-right">Software Developer</h2>
+//       <SocialLinks socialLinks={SOCIAL_LINKS} />
+//     </div>
+//   </div>
+//   <div className="content-container">
+//     <PageCardLayout pages={pages} />
+//   </div>
+// </>
 
 export const pageQuery = graphql`
   query {
