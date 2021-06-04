@@ -5,7 +5,9 @@ import PageLayout from "../components/PageLayout";
 const contact = () => {
   return (
     <PageLayout>
-      <ContactForm />
+      <div className="content-container content-container--small">
+        <ContactForm />
+      </div>
     </PageLayout>
   );
 };
