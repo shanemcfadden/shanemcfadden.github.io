@@ -22,11 +22,17 @@ const SEO = () => {
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
       <meta name="author" content={author} />
+      <meta itemProp="name" content={title} />
+      <meta itemProp="description" content={description} />
+      <meta itemProp="image" content={ogImage} />
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
+      <meta name="twitter:card" content={summary} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
       <meta property="twitter:image" content={twitterImage} />
       <script type="application/ld+json">
         {`{
