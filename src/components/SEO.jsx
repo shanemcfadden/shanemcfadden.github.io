@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 const SEO = () => {
   const { site } = useStaticQuery(query);
   const {
+    author,
     description,
     ogImage,
     title,
@@ -20,6 +21,7 @@ const SEO = () => {
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
+      <meta name="author" content={author} />
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
@@ -45,6 +47,7 @@ const query = graphql`
   query SEO {
     site {
       siteMetadata {
+        author
         description
         ogImage
         title

@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    author: "Shane McFadden",
     title: "Shane McFadden - Software Developer",
     description:
       "Portfolio site for Shane McFadden, a software developer dedicated to building full-stack applications with React, Javascript, Typescript, NodeJS, MySQL, and more.",
