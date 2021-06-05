@@ -17,6 +17,10 @@ button,
     color: white;
   }
 
+  &:disabled {
+    color: $light-mc;
+  }
+
   &:hover,
   &:active {
     background-color: $dark-mc;
@@ -28,6 +32,9 @@ button,
     &:active {
       background-color: black;
     }
+    &:disabled {
+      color: gray;
+    }
   }
 }
 
@@ -37,6 +44,7 @@ button,
   align-items: flex-start;
   margin: $m-margin 0;
 
+  button,
   .button {
     margin: $s-margin auto;
     text-align: center;
