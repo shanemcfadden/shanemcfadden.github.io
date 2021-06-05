@@ -23,8 +23,8 @@ const ContactForm = () => {
       <textarea
         id="message"
         name="message"
-        placeholder="Message...
-      "
+        placeholder="Message..."
+        rows="10"
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <div className="button-row">
