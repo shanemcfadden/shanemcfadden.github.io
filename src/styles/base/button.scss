@@ -5,6 +5,7 @@ button,
   border: 0;
   border-radius: 0.5rem;
   cursor: pointer;
+  line-height: 1.5;
   margin: 0 $s-margin;
   padding: $s-margin $m-margin;
   text-decoration: none;
@@ -54,6 +55,7 @@ button,
   @media only screen and (min-width: $desktop-breakpoint) {
     flex-direction: row;
 
+    button,
     .button {
       margin: 0 $s-margin;
       width: auto;
