@@ -37,7 +37,7 @@ const ContactForm = () => {
         id="message"
         name="message"
         placeholder="Message..."
-        rows="10"
+        rows="15"
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <div className="g-recaptcha" data-sitekey={recaptchaKey}></div>
