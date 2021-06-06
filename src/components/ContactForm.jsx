@@ -7,7 +7,12 @@ const ContactForm = () => {
   const { formspreeId, recaptchaKey } = useStaticQuery(query).site.siteMetadata;
   const [state, handleSubmit] = useForm(formspreeId);
   if (state.succeeded) {
-    return <div>Your message has sent successfully!</div>;
+    return (
+      <div className="content-card">
+        <h2>Success!</h2>
+        <p>Your message has been sent successfully.</p>
+      </div>
+    );
   }
   return (
     <form className="content-card" onSubmit={handleSubmit}>
