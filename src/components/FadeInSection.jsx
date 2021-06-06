@@ -8,14 +8,14 @@ const FadeInSection = ({ children }) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!isVisible && entry.isIntersecting) {
-          setIsVisible(entry.isIntersecting);
+          setIsVisible(true);
         }
       });
     });
     const ref = domRef.current;
     observer.observe(ref);
     return () => observer.unobserve(ref);
-  }, [isVisible, setIsVisible]);
+  }, [isVisible]);
   return (
     <div
       className={`fade-in-section ${
