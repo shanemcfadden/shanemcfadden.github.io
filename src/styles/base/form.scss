@@ -20,6 +20,11 @@ textarea {
 }
 
 .g-recaptcha {
-  transform: scale(0.67);
+  transform: scale(0.77);
   transform-origin: 0 0;
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    transform: none;
+    transform-origin: none;
+  }
 }
