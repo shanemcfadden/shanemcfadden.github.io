@@ -3,28 +3,31 @@ nav {
   flex-direction: column;
   margin: 2rem 0;
   @media screen and (min-width: $desktop-breakpoint) {
-    display: block;
-    // Allow margins below nav to collapse
-    margin-top: 0;
-    margin-bottom: 2rem;
+    $flex-gap-horizontal: 2rem;
+    $flex-gap-vertical: 1rem;
+    $margin-top: 2rem;
+    $margin-bottom: 2rem;
+
+    * {
+      margin: $flex-gap-vertical 0 0 $flex-gap-horizontal;
+    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: calc(-1 * #{$flex-gap-vertical} + #{$margin-top}) 0 $margin-bottom
+      calc(-1 * #{$flex-gap-horizontal});
+    width: calc(100% + #{$flex-gap-horizontal});
   }
 }
 
 .nav__button {
-  border: 0;
   background-color: transparent;
   cursor: pointer;
-  display: inline-block;
   font-size: 2em;
   font-weight: 700;
-  padding: 0;
   text-align: center;
   text-decoration: none;
   transition: color $default-transition-style;
   @media screen and (min-width: $desktop-breakpoint) {
-    margin-right: 1.33em;
-    // Allow margins above nav__buttons to remain visible when navigating
-    margin-top: 2rem;
     text-align: left;
   }
 
