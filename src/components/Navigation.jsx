@@ -16,10 +16,7 @@ const Navigation = () => {
     { to: "/contact/#navigation", text: "Contact" },
   ];
   return (
-    <nav
-      id="navigation"
-      className="flex-columns flex--justify-content-space-between"
-    >
+    <nav id="navigation">
       {links.map(({ to, text }) => (
         <Link to={to} key={to} getProps={isActiveWithHash}>
           {text}
