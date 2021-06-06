@@ -18,3 +18,8 @@ textarea {
   border-radius: $s-margin;
   padding: $s-margin;
 }
+
+.g-recaptcha {
+  transform: scale(0.67);
+  transform-origin: 0 0;
+}
