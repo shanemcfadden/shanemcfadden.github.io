@@ -1,3 +1,7 @@
+---
+title: "About Me"
+---
+
 ## Profile
 
 I am a full-stack developer harnessing my passion for solving complex problems and my background as a professional musician to think outside the box and build effective software solutions.

@@ -5,10 +5,7 @@ import GridOfListItemsCard from "../components/GridOfListItemsCard";
 import technicalSkills from "../content/json/technical-skills.json";
 
 const about = ({ data }) => {
-  const markdownNodes = data.allMarkdownRemark.nodes;
-  const aboutMeContent = markdownNodes.find(
-    (node) => !!node.fileAbsolutePath.match(/.*\/about-me\.md$/)
-  ).html;
+  const aboutMeContent = data.markdownRemark.html;
   return (
     <PageLayout>
       <GridOfListItemsCard
@@ -24,11 +21,8 @@ export default about;
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
-      nodes {
-        fileAbsolutePath
-        html
-      }
+    markdownRemark(frontmatter: { title: { eq: "About Me" } }) {
+      html
     }
   }
 `;
