@@ -1,6 +1,6 @@
 ## Profile
 
-I am a self-motivated learner harnessing my passion for solving complex problems to transition from hobby coding as a full-time musician to building software professionally with an experienced team.
+I am a full-stack developer harnessing my passion for solving complex problems and my background as a professional musician to think outside the box and build effective software solutions.
 
 ## As a Developer, I Can...
 
