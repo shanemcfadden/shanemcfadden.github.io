@@ -1,0 +1,5 @@
+[
+  { "to": "/#navigation", "text": "Projects" },
+  { "to": "/about/#navigation", "text": "About Me" },
+  { "to": "/contact/#navigation", "text": "Contact" }
+]

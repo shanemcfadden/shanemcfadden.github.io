@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import links from "../json/navigation-links.json";
 
 const Navigation = () => {
   const isActiveWithHash = ({ location, href }) => {
@@ -9,11 +10,6 @@ const Navigation = () => {
       : { className: "nav__button" };
   };
 
-  const links = [
-    { to: "/#navigation", text: "Projects" },
-    { to: "/about/#navigation", text: "About Me" },
-    { to: "/contact/#navigation", text: "Contact" },
-  ];
   return (
     <nav id="navigation">
       {links.map(({ to, text }) => (
