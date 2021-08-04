@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import PageLayout from "../components/PageLayout";
 import GridOfListItemsCard from "../components/GridOfListItemsCard";
-import TECHNICAL_SKILLS from "../content/TechnicalSkills";
+import technicalSkills from "../json/technical-skills.json";
 
 const about = ({ data }) => {
   const markdownNodes = data.allMarkdownRemark.nodes;
@@ -13,7 +13,7 @@ const about = ({ data }) => {
     <PageLayout>
       <GridOfListItemsCard
         title="Technical Skills"
-        listItems={TECHNICAL_SKILLS}
+        listItems={technicalSkills}
       />
       <div dangerouslySetInnerHTML={{ __html: aboutMeContent }} />
     </PageLayout>

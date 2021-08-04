@@ -1,4 +1,4 @@
-const TECHNICAL_SKILLS = [
+[
   "JavaScript/ES6",
   "TypeScript",
   "React",
@@ -13,7 +13,5 @@ const TECHNICAL_SKILLS = [
   "GraphQL",
   "Git",
   "MongoDB",
-  "Jest",
-];
-
-export default TECHNICAL_SKILLS;
+  "Jest"
+]
