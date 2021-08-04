@@ -12,7 +12,6 @@ const Navigation = () => {
   const links = [
     { to: "/#navigation", text: "Projects" },
     { to: "/about/#navigation", text: "About Me" },
-    { to: "/resume/#navigation", text: "Resume" },
     { to: "/contact/#navigation", text: "Contact" },
   ];
   return (
