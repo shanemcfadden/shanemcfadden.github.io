@@ -4,10 +4,7 @@ import ProjectCards from "../components/ProjectCards";
 import PageLayout from "../components/PageLayout";
 
 const IndexPage = ({ data }) => {
-  const markdownNodes = data.allMarkdownRemark.nodes;
-  const projects = markdownNodes
-    .filter((node) => !!node.fileAbsolutePath.match(/.*\/projects\/.*\.md$/))
-    .sort((a, b) => a.frontmatter.orderIndex - b.frontmatter.orderIndex);
+  const projects = data.allMarkdownRemark.nodes;
   return (
     <PageLayout>
       <ProjectCards projectNodes={projects} />
@@ -17,7 +14,10 @@ const IndexPage = ({ data }) => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { glob: "**/projects/*.md" } }
+      sort: { fields: frontmatter___orderIndex }
+    ) {
       nodes {
         frontmatter {
           githubRepo
@@ -25,7 +25,6 @@ export const pageQuery = graphql`
           postmanDocs
           siteLink
         }
-        fileAbsolutePath
         html
       }
     }
