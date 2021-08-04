@@ -19,7 +19,7 @@ const PageLayout = ({ banner = true, children }) => {
         <Navigation />
         <main>{children}</main>
         <footer>
-          <SocialLinks socialLinks={SOCIAL_LINKS} color="mc" />
+          <SocialLinks color="mc" />
         </footer>
       </div>
     </div>

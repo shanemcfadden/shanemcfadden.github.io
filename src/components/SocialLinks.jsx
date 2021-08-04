@@ -1,10 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SOCIAL_LINKS from "../content/SocialLinks";
 
-const SocialLinks = ({ color, socialLinks }) => {
+const SocialLinks = ({ color }) => {
   return (
     <div className="social-links">
-      {socialLinks.map(({ link, icon, title }, i) => (
+      {SOCIAL_LINKS.map(({ link, icon, title }, i) => (
         <a href={link} key={`social-link-${i}`} className="social-link">
           <FontAwesomeIcon
             className={`social-link__icon${

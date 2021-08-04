@@ -10,7 +10,7 @@ const Banner = () => {
         <h1 className="align-center">Shane McFadden</h1>
         <div className="align-center">and I'm a</div>
         <h2 className="align-right">Software Developer</h2>
-        <SocialLinks socialLinks={SOCIAL_LINKS} />
+        <SocialLinks />
       </div>
     </div>
   );
