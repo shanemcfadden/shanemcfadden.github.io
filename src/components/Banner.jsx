@@ -1,6 +1,5 @@
 import React from "react";
 import SocialLinks from "./SocialLinks";
-import SOCIAL_LINKS from "../content/SocialLinks";
 
 const Banner = () => {
   return (

@@ -5,7 +5,6 @@ import "../styles/index.scss";
 import SEO from "./SEO";
 import Navigation from "./Navigation";
 import Banner from "./Banner";
-import SOCIAL_LINKS from "../content/SocialLinks";
 import SocialLinks from "./SocialLinks";
 
 const PageLayout = ({ banner = true, children }) => {
