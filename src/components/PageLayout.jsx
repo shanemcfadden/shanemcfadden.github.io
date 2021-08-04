@@ -2,10 +2,11 @@ import React from "react";
 import "normalize.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/index.scss";
-import SocialLinks from "./SocialLinks";
 import SEO from "./SEO";
 import Navigation from "./Navigation";
+import Banner from "./Banner";
 import SOCIAL_LINKS from "../content/SocialLinks";
+import SocialLinks from "./SocialLinks";
 
 const PageLayout = ({ banner = true, children }) => {
   return (
@@ -13,17 +14,7 @@ const PageLayout = ({ banner = true, children }) => {
       {/* eslint-disable react/jsx-pascal-case */}
       <SEO />
       {/* eslint-enable react/jsx-pascal-case */}
-      {banner && (
-        <div className="banner">
-          <div className="content-container">
-            <div>Hi, my name is</div>
-            <h1 className="align-center">Shane McFadden</h1>
-            <div className="align-center">and I'm a</div>
-            <h2 className="align-right">Software Developer</h2>
-            <SocialLinks socialLinks={SOCIAL_LINKS} />
-          </div>
-        </div>
-      )}
+      {banner && <Banner />}
       <div className="content-container">
         <Navigation />
         <main>{children}</main>
