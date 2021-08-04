@@ -40,7 +40,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#357cfd`,
         display: `standalone`,
-        icon: "src/images/icon.png",
+        icon: "src/content/images/icon.png",
       },
     },
     {
@@ -63,14 +63,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/markdown`,
+        path: `${__dirname}/src/content/markdown`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/content/images/",
       },
       __key: "images",
     },

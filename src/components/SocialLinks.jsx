@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SOCIAL_LINKS from "../content/SocialLinks";
+import SOCIAL_LINKS from "../content/js/SocialLinks";
 
 const SocialLinks = ({ color }) => {
   return (
