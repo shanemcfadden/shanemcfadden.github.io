@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import PageLayout from "../components/PageLayout";
 import GridOfListItemsCard from "../components/GridOfListItemsCard";
-import technicalSkills from "../json/technical-skills.json";
+import technicalSkills from "../content/json/technical-skills.json";
 
 const about = ({ data }) => {
   const markdownNodes = data.allMarkdownRemark.nodes;

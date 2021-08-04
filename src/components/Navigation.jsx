@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import links from "../json/navigation-links.json";
+import links from "../content/json/navigation-links.json";
 
 const Navigation = () => {
   const isActiveWithHash = ({ location, href }) => {
