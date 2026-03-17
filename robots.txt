@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://shanemcfadden.dev/sitemap/sitemap-index.xml
-Host: https://shanemcfadden.dev
