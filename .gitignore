@@ -1,0 +1,10 @@
+node_modules/
+.cache/
+.DS_store
+img
+
+.next/
+out/
+build/
+next-env.d.ts
+
