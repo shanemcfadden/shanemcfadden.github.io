@@ -1,11 +1,27 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { SITE_NAME } from "@static/constants";
+import Script from "next/script";
+
+const GTAG_ID = "G-CS6MHX4ZDB";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <Script
+          async
+          strategy="beforeInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`}
+        />
+        <Script id="gtag-inline" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GTAG_ID}');
+          `}
+        </Script>
+
         <meta name="theme-color" content="#f2f5f3" />
 
         {/* Open Graph */}
@@ -34,8 +50,6 @@ export default function Document() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-
-        <GoogleAnalytics gaId="G-CS6MHX4ZDB" />
       </Head>
       <body className="bg-background-page">
         <Main />
