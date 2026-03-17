@@ -2,6 +2,8 @@ import { Html, Head, Main, NextScript } from "next/document";
 import { SITE_NAME } from "@static/constants";
 import Script from "next/script";
 
+const GTAG_ID = "G-CS6MHX4ZDB";
+
 export default function Document() {
   return (
     <Html lang="en">
@@ -9,15 +11,14 @@ export default function Document() {
         <Script
           async
           strategy="beforeInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-CS6MHX4ZDB"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}`}
         />
-        <Script strategy="beforeInteractive">
+        <Script id="gtag-inline" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
-            gtag('config', 'G-CS6MHX4ZDB');
+            gtag('config', '${GTAG_ID}');
           `}
         </Script>
 
